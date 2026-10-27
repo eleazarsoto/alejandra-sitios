@@ -8,12 +8,17 @@ Tres sitios estáticos (HTML, CSS y JS sin compilación), publicados con Cloudfl
 | `empresas/` | empresas.alejandraconsultora.com | alejandra-empresas |
 | `psicoeducale/` | psicoeducale.alejandraconsultora.com | alejandra-psicoeducale |
 
-## Configuración de cada proyecto en Cloudflare Pages
+## Configuración en Cloudflare (Workers con archivos estáticos)
 
-- Framework preset: **None**
-- Build command: *(vacío)*
-- Build output directory: **la carpeta del sitio** (`principal`, `empresas` o `psicoeducale`)
-- Production branch: `main`
+Cada sitio es un proyecto de Workers conectado a este repositorio, con su propio archivo de configuración:
+
+| Proyecto | Deploy command | Preview command |
+|---|---|---|
+| alejandra-principal | `npx wrangler deploy --config wrangler.principal.jsonc` | `npx wrangler versions upload --config wrangler.principal.jsonc` |
+| alejandra-empresas | `npx wrangler deploy --config wrangler.empresas.jsonc` | `npx wrangler versions upload --config wrangler.empresas.jsonc` |
+| alejandra-psicoeducale | `npx wrangler deploy --config wrangler.psicoeducale.jsonc` | `npx wrangler versions upload --config wrangler.psicoeducale.jsonc` |
+
+Build command: vacío. El nombre del proyecto debe coincidir con `name` en su archivo `wrangler.*.jsonc`.
 
 Cada carpeta lleva su propia copia de `motion.js` y `motion.css` (motor de animaciones).
 
