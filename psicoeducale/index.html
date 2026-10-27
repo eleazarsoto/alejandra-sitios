@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PsicoEducAle | Acompañamiento psicológico para niñas, niños y familias en Ajijic</title>
+<meta name="description" content="Te acompaño a criar y educar con límites y afecto. Consulta psicológica presencial en Ajijic y en línea, talleres de crianza y de convivencia escolar. Psic. Alejandra García Franco.">
+<meta property="og:title" content="PsicoEducAle · Criar y educar con límites y afecto">
+<meta property="og:description" content="Consulta psicológica, talleres de crianza y convivencia escolar. Psic. Alejandra García Franco.">
+<meta property="og:image" content="https://psicoeducale.alejandraconsultora.com/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFBF5">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M32 58 C22 48 4 40 4 22 C4 10 14 5 22 7 C27 8 30 12 32 16 C34 12 37 8 42 7 C50 5 60 10 60 22 C60 40 42 48 32 58Z' fill='%23EE8A73'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{if(!sessionStorage.getItem('intro-visto')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)r.classList.add('con-intro')}catch(e){}setTimeout(function(){if(!window.__motion)r.classList.remove('js','con-intro')},3500)})()</script>
+<link rel="stylesheet" href="motion.css">
+<script src="motion.js" defer></script>
+<style>
+  :root{
+    --crema:#FFFBF5; --durazno:#FBE8DA; --aqua-p:#DDEFEB; --lila-p:#ECE6F5; --sol-p:#FCF0CD;
+    --coral:#EE8A73; --aqua:#86C9BF; --sol:#F6CF72; --lila:#BFAEDD;
+    --texto:#3D302A; --texto-2:#695A51; --coral-texto:#A5452E; --aqua-texto:#2C675F; --lila-texto:#5A4A82; --linea:#EFE2D6;
+    --oscuro:#3A2E28;
+    --titulos:'Fredoka', 'Poppins', 'Segoe UI', Arial, sans-serif;
+    --cuerpo:'Poppins', 'Segoe UI', Arial, sans-serif;
+    --ancho:1200px; --progreso:var(--coral);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:96px; -webkit-text-size-adjust:100%}
+  body{margin:0; background:var(--crema); color:var(--texto); font:300 1.05rem/1.8 var(--cuerpo); -webkit-font-smoothing:antialiased; overflow-x:clip}
+  strong,b{font-weight:500}
+  img{max-width:100%; display:block}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--aqua-texto); outline-offset:4px; border-radius:8px}
+  ::selection{background:var(--sol-p)}
+  .contenedor{max-width:var(--ancho); margin:0 auto; padding:0 clamp(20px,4vw,40px)}
+  h1,h2,h3{font-family:var(--titulos); font-weight:500; line-height:1.08; margin:0; letter-spacing:-.01em}
+  section{padding:clamp(90px,11vw,150px) 0; position:relative}
+  .etiqueta{display:inline-flex; align-items:center; gap:10px; margin:0 0 20px; padding:7px 16px 7px 10px; border-radius:999px; background:var(--durazno); font:500 .9rem/1 var(--titulos); color:var(--coral-texto)}
+  .etiqueta::before{content:""; width:10px; height:10px; border-radius:50%; background:var(--coral)}
+  .etiqueta.aqua{background:var(--aqua-p); color:var(--aqua-texto)} .etiqueta.aqua::before{background:var(--aqua)}
+  .etiqueta.lila{background:var(--lila-p); color:var(--lila-texto)} .etiqueta.lila::before{background:var(--lila)}
+  .etiqueta.sol{background:var(--sol-p); color:#7A5A12} .etiqueta.sol::before{background:var(--sol)}
+  .mezcla{mix-blend-mode:multiply}
+  .grano{position:fixed; inset:0; pointer-events:none; z-index:90; opacity:.045; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .25 0 0 0 0 .2 0 0 0 0 .16 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* Botones */
+  .boton{position:relative; isolation:isolate; overflow:hidden; display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:999px; border:0;
+    font:500 1.02rem/1 var(--titulos); text-decoration:none; cursor:pointer; transition:transform .6s var(--ease), color .4s, box-shadow .5s var(--ease)}
+  .boton::before{content:""; position:absolute; inset:0; z-index:-1; background:var(--relleno,var(--sol)); clip-path:circle(0% at 50% 120%); transition:clip-path .7s var(--ease)}
+  .boton:hover::before{clip-path:circle(140% at 50% 120%)}
+  .boton.coral{background:var(--coral); color:#2E1B14; box-shadow:0 14px 30px -16px rgba(238,138,115,.9)}
+  .boton.suave{background:var(--aqua-p); color:var(--aqua-texto); --relleno:var(--aqua)}
+  .boton.suave:hover{color:#163F3A}
+  .boton svg{width:18px; height:18px}
+
+  /* Intro */
+  #intro{background:var(--crema)}
+  .intro-caja{position:relative; display:grid; place-items:center; width:min(70vw,320px)}
+  .intro-arcos{width:100%; overflow:visible}
+  .intro-arcos path{fill:none; stroke-linecap:round; stroke-width:26; stroke-dasharray:1; stroke-dashoffset:1; animation:dibuja 1.1s var(--ease) both}
+  .intro-arcos path:nth-child(2){animation-delay:.18s} .intro-arcos path:nth-child(3){animation-delay:.36s}
+  @keyframes dibuja{to{stroke-dashoffset:0}}
+  .intro-logo{position:absolute; top:-6%; width:58%; mix-blend-mode:multiply; animation:salta 1s var(--ease) .65s both}
+  @keyframes salta{from{opacity:0; transform:scale(.6) translateY(20px)} to{opacity:1; transform:none}}
+
+  /* Barra */
+  .barra{position:fixed; inset:0 0 auto 0; z-index:60; border-bottom:1px solid transparent; background:var(--crema)}
+  .barra.con-linea{border-bottom-color:var(--linea); box-shadow:0 10px 30px -24px rgba(61,48,42,.5)}
+  .barra .contenedor{display:flex; align-items:center; justify-content:space-between; gap:20px; height:84px}
+  .marca img{display:block; height:42px; width:auto; mix-blend-mode:multiply}
+  .barra nav{display:flex; gap:28px; font:400 .98rem/1 var(--titulos)}
+  .barra nav a{position:relative; text-decoration:none; color:var(--texto-2); padding:8px 0; transition:color .3s}
+  .barra nav a::after{content:""; position:absolute; left:50%; bottom:0; width:6px; height:6px; margin-left:-3px; border-radius:50%; background:var(--coral); scale:0; transition:scale .4s var(--ease)}
+  .barra nav a:hover{color:var(--texto)} .barra nav a:hover::after{scale:1}
+  .derecha{display:flex; align-items:center; gap:12px}
+  .barra .boton{padding:13px 22px; font-size:.95rem}
+  .sitios{position:relative}
+  .sitios-boton{display:flex; align-items:center; gap:10px; padding:12px 18px; border-radius:999px; border:1px solid var(--linea); background:var(--crema); color:var(--texto-2); font:400 .95rem/1 var(--titulos); cursor:pointer; transition:border-color .3s, color .3s}
+  .sitios-boton:hover, .sitios.abierto .sitios-boton{color:var(--texto); border-color:var(--coral)}
+  .sitios-boton::after{content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:translateY(-2px) rotate(45deg); transition:transform .3s}
+  .sitios.abierto .sitios-boton::after{transform:translateY(1px) rotate(-135deg)}
+  .solo-movil-etq, .panel .solo-movil{display:none}
+  .panel{position:absolute; right:0; top:calc(100% + 12px); width:300px; display:flex; flex-direction:column; padding:10px; border-radius:24px; background:var(--crema); border:1px solid var(--linea);
+    box-shadow:0 30px 60px -30px rgba(61,48,42,.4); opacity:0; translate:0 -8px; pointer-events:none; transition:opacity .35s, translate .5s var(--ease)}
+  .sitios.abierto .panel{opacity:1; translate:none; pointer-events:auto}
+  .panel a{display:block; padding:12px 14px; border-radius:14px; text-decoration:none; color:var(--texto); line-height:1.3; font-weight:400; transition:background .25s}
+  .panel a:hover, .panel a[aria-current="page"]{background:var(--durazno)}
+  .panel a[aria-current="page"]{font-weight:500}
+  .panel a small{display:block; color:var(--texto-2); font-size:.8rem; margin-top:2px}
+  .panel .grupo{font:500 .78rem/1 var(--titulos); color:var(--texto-2); padding:12px 14px 6px; margin:0}
+  .panel a.boton-panel{margin-top:8px; text-align:center; background:var(--coral); color:#2E1B14; border-radius:999px; font:500 1rem/1.2 var(--titulos)}
+
+  /* Portada */
+  .portada{min-height:100svh; display:flex; align-items:center; padding:120px 0 80px; overflow:hidden}
+  .portada-grid{display:grid; grid-template-columns:1.08fr .92fr; gap:clamp(24px,5vw,72px); align-items:center}
+  .portada h1{font-size:clamp(2.7rem,5.6vw,5.3rem); line-height:1.02; letter-spacing:-.02em}
+  .portada h1 .tono{color:var(--coral-texto)}
+  .subraya{position:relative; display:inline-block}
+  .subraya svg{position:absolute; left:-2%; bottom:-.12em; width:104%; height:.36em; overflow:visible}
+  .subraya path{stroke-dasharray:1; stroke-dashoffset:1; transition:stroke-dashoffset 1.4s var(--ease) 1.1s}
+  .listo .subraya path{stroke-dashoffset:0}
+  .lead{font-size:clamp(1.05rem,1.3vw,1.2rem); color:var(--texto-2); max-width:44ch; margin:30px 0 40px}
+  .acciones{display:flex; flex-wrap:wrap; gap:12px}
+  .datos-rapidos{display:flex; flex-wrap:wrap; gap:10px 26px; margin-top:38px; font:400 .95rem/1.3 var(--titulos); color:var(--texto-2)}
+  .datos-rapidos span{display:flex; align-items:center; gap:8px}
+  .datos-rapidos i{width:8px; height:8px; border-radius:50%; background:var(--aqua)}
+  .datos-rapidos span:nth-child(2) i{background:var(--sol)} .datos-rapidos span:nth-child(3) i{background:var(--lila)}
+
+  .escena{position:relative; width:100%; max-width:520px; aspect-ratio:1/1.06; justify-self:center}
+  .escena .blob{position:absolute; inset:6% 10% 12% 6%; overflow:hidden; background:var(--durazno);
+    border-radius:58% 42% 51% 49% / 49% 55% 45% 51%; animation:respira 14s ease-in-out infinite alternate}
+  .escena .blob img{width:100%; height:100%; object-fit:cover; object-position:50% 8%}
+  .escena .blob-borde{position:absolute; inset:2% 13% 15% 2%; border:1.5px solid var(--lila); border-radius:48% 52% 45% 55% / 55% 45% 55% 45%; animation:respira2 16s ease-in-out infinite alternate; pointer-events:none}
+  @keyframes respira{0%{border-radius:58% 42% 51% 49% / 49% 55% 45% 51%} 50%{border-radius:44% 56% 41% 59% / 57% 44% 56% 43%} 100%{border-radius:52% 48% 60% 40% / 42% 58% 42% 58%}}
+  @keyframes respira2{0%{border-radius:48% 52% 45% 55% / 55% 45% 55% 45%} 100%{border-radius:57% 43% 52% 48% / 44% 56% 46% 54%}}
+  .js .escena .blob{clip-path:circle(0% at 50% 55%); transition:clip-path 1.6s var(--ease) .2s}
+  .listo .escena .blob{clip-path:circle(75% at 50% 55%)}
+  .sticker{position:absolute; overflow:visible; transform:translate3d(calc(var(--mx,0) * var(--f,0) * 1px), calc(var(--my,0) * var(--f,0) * 1px), 0)}
+  .sticker > *{animation:flota var(--t,6s) ease-in-out infinite; animation-delay:var(--ad,0s)}
+  .js .sticker{opacity:0; scale:.4; transition:opacity .6s, scale 1s cubic-bezier(.34,1.56,.64,1)}
+  .listo .sticker{opacity:1; scale:1}
+  .s-sol{top:0; right:2%; width:22%; --f:-18; transition-delay:.7s !important}
+  .s-sol .rayos{animation:gira 24s linear infinite; transform-origin:50% 50%}
+  .s-arco{bottom:2%; left:-4%; width:36%; --f:22; transition-delay:.85s !important}
+  .s-estrella{top:44%; right:-3%; width:13%; --f:30; --t:5s; --ad:-1s; transition-delay:1s !important}
+  .s-chispa{top:12%; left:2%; width:11%; --f:-26; --t:7s; transition-delay:1.1s !important}
+  .s-corazon{top:58%; left:-6%; width:9%; --f:16; --t:4.6s; --ad:-2s; transition-delay:1.2s !important}
+  .ficha-flotante{position:absolute; right:-4%; bottom:9%; z-index:3; padding:16px 20px; border-radius:20px; background:rgba(255,251,245,.92); backdrop-filter:blur(6px);
+    box-shadow:0 24px 44px -24px rgba(61,48,42,.45); font:400 .9rem/1.35 var(--titulos); display:flex; gap:12px; align-items:center; animation:flota 7s ease-in-out infinite}
+  .ficha-flotante b{display:block; font-weight:500; font-size:1rem}
+  .ficha-flotante .icono{width:38px; height:38px; border-radius:50%; background:var(--aqua-p); display:grid; place-items:center; flex:none}
+  .js .ficha-flotante{opacity:0; transition:opacity .8s ease 1.3s}
+  .listo .ficha-flotante{opacity:1}
+
+  /* Banda */
+  .banda-env{overflow:hidden; padding:30px 0; margin:-30px 0; position:relative; z-index:2}
+  .banda{transform:rotate(1.4deg); margin:0 -30px; background:var(--coral); color:#2E1B14; padding:20px 0}
+  .banda .pista{gap:36px; padding-right:36px; font:500 clamp(1.4rem,2.6vw,2.2rem)/1.2 var(--titulos); white-space:nowrap}
+  .banda svg{width:30px; height:30px; flex:none}
+
+  /* Frase con logo */
+  .frase-grid{display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(30px,6vw,90px); align-items:center}
+  .logo-tarjeta{position:relative; background:#fff; border-radius:36px; padding:clamp(18px,3vw,34px); box-shadow:0 40px 70px -40px rgba(61,48,42,.35); transition:transform .5s var(--ease); overflow:hidden; rotate:-2.5deg}
+  .logo-tarjeta::after{content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(circle at var(--gx,50%) var(--gy,50%), rgba(255,255,255,.55), transparent 55%); opacity:0; transition:opacity .4s}
+  .logo-tarjeta:hover::after{opacity:1}
+  .logo-tarjeta img{width:100%; height:auto}
+  .frase p.grande{margin:0; font:500 clamp(1.9rem,4vw,3.6rem)/1.18 var(--titulos); letter-spacing:-.015em}
+  .frase p.grande .acento{color:var(--coral-texto)}
+  .frase .pie-frase{margin-top:28px; color:var(--texto-2)}
+
+  /* Consulta */
+  .consulta{background:var(--durazno); border-radius:clamp(32px,5vw,64px); margin:0 clamp(8px,1.6vw,22px); overflow:hidden}
+  .consulta-grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(36px,6vw,80px); align-items:center}
+  .consulta h2{font-size:clamp(2.3rem,4.6vw,3.8rem)}
+  .consulta .texto{color:var(--texto-2); margin:18px 0 0; max-width:44ch}
+  .para-quien{list-style:none; padding:0; margin:28px 0 36px; display:flex; flex-wrap:wrap; gap:10px}
+  .para-quien li{background:var(--crema); padding:8px 18px; border-radius:999px; font:400 .95rem/1.3 var(--titulos)}
+  .ficha{margin:0; background:var(--crema); border-radius:32px; padding:12px 34px; box-shadow:0 30px 60px -36px rgba(61,48,42,.35)}
+  .ficha div{display:grid; grid-template-columns:130px 1fr; gap:16px; padding:20px 0; border-bottom:1px dashed #E8D5C4}
+  .ficha div:last-child{border-bottom:0}
+  .ficha dt{font:500 1rem/1.4 var(--titulos); color:var(--coral-texto)}
+  .ficha dd{margin:0}
+  .consulta .deco{position:absolute; right:-40px; top:-40px; width:220px; opacity:.9; pointer-events:none}
+  .consulta .deco circle{animation:gira 40s linear infinite; transform-origin:110px 110px}
+
+  /* Talleres */
+  .cabeza{max-width:680px; margin-bottom:clamp(44px,5vw,64px)}
+  .cabeza h2{font-size:clamp(2.3rem,4.6vw,3.8rem)}
+  .cabeza p{color:var(--texto-2); margin:16px 0 0}
+  .talleres{display:grid; grid-template-columns:1fr 1fr; gap:28px}
+  .taller{position:relative; overflow:hidden; border-radius:40px; padding:clamp(30px,4vw,52px); display:flex; flex-direction:column; gap:12px; transition:transform .5s var(--ease); will-change:transform}
+  .taller::after{content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(circle at var(--gx,50%) var(--gy,50%), rgba(255,255,255,.5), transparent 55%); opacity:0; transition:opacity .4s}
+  .taller:hover::after{opacity:1}
+  .taller.crianza{background:var(--aqua-p)} .taller.escuela{background:var(--lila-p)}
+  .taller .icono{width:92px; height:70px; overflow:visible; margin-bottom:8px; transition:rotate .6s cubic-bezier(.34,1.56,.64,1)}
+  .taller:hover .icono{rotate:-8deg}
+  .taller .quien{font:500 .95rem/1 var(--titulos)}
+  .taller.crianza .quien{color:var(--aqua-texto)} .taller.escuela .quien{color:var(--lila-texto)}
+  .taller h3{font-size:clamp(1.8rem,3vw,2.4rem)}
+  .taller p{margin:0; color:var(--texto-2)}
+  .taller ul{margin:4px 0 0; padding:0; list-style:none; display:grid; gap:8px}
+  .taller ul li{display:flex; gap:12px; align-items:baseline; color:var(--texto-2)}
+  .taller ul li::before{content:""; flex:none; width:9px; height:9px; border-radius:50%; background:var(--lila); translate:0 -1px}
+
+  /* Quién te acompaña */
+  .sobre{overflow:hidden}
+  .sobre-grid{display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(40px,7vw,100px); align-items:center}
+  .arco-marco{position:relative; max-width:440px; width:100%}
+  .arco-marco .contorno{position:absolute; inset:-14px 14px 14px -14px; border:1.5px solid var(--lila); border-radius:240px 240px 32px 32px}
+  .arco-marco .foto{aspect-ratio:4/5; overflow:hidden; border-radius:240px 240px 32px 32px; background:var(--durazno)}
+  .arco-marco .foto img{width:100%; height:100%; object-fit:cover; object-position:35% 20%}
+  .arco-marco .punto-sol{position:absolute; top:6%; right:-6%; width:80px; height:80px; border-radius:50%; background:var(--sol); mix-blend-mode:multiply}
+  .sobre h2{font-size:clamp(2.2rem,4.2vw,3.4rem); margin-bottom:22px}
+  .sobre .destacado{font:400 clamp(1.2rem,1.7vw,1.4rem)/1.5 var(--titulos); margin:0 0 20px}
+  .sobre p{color:var(--texto-2); margin:0 0 16px; max-width:54ch}
+  .logros{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:28px 0}
+  .logro{padding:20px 22px; border-radius:24px; background:var(--sol-p)}
+  .logro:nth-child(2){background:var(--aqua-p)}
+  .logro strong{display:block; font:500 clamp(2rem,3.4vw,2.8rem)/1 var(--titulos)}
+  .logro > span{font-size:.92rem; color:var(--texto-2); line-height:1.4; display:block; margin-top:8px}
+  .credenciales{list-style:none; padding:0; margin:6px 0 30px; display:flex; flex-wrap:wrap; gap:8px}
+  .credenciales li{background:var(--crema); border:1px solid var(--linea); padding:6px 16px; border-radius:999px; font:400 .9rem/1.4 var(--titulos)}
+
+  /* Cómo agendar */
+  .pasos-env{position:relative}
+  .camino{position:absolute; left:0; right:0; top:32px; width:100%; height:60px; overflow:visible; pointer-events:none}
+  .camino path{stroke-dasharray:1; stroke-dashoffset:calc(1 - var(--p,0)); transition:stroke-dashoffset .2s linear}
+  .pasos{list-style:none; counter-reset:paso; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:40px; position:relative}
+  .pasos li{counter-increment:paso; position:relative; padding-top:104px}
+  .pasos li::before{content:counter(paso); position:absolute; top:0; left:0; width:80px; height:80px; border-radius:50%; display:grid; place-items:center; font:500 1.9rem/1 var(--titulos); color:var(--texto); box-shadow:0 18px 30px -18px rgba(61,48,42,.4)}
+  .pasos li:nth-child(1)::before{background:var(--durazno)} .pasos li:nth-child(2)::before{background:var(--sol-p)} .pasos li:nth-child(3)::before{background:var(--aqua-p)}
+  .pasos h3{font-size:1.5rem; margin-bottom:8px}
+  .pasos p{margin:0; color:var(--texto-2)}
+  .pasos .boton{margin-top:20px}
+  .politica{display:flex; align-items:center; gap:16px; margin:56px 0 0; padding:22px 28px; border-radius:28px; background:var(--lila-p); color:var(--lila-texto); max-width:740px; font-weight:400}
+  .politica svg{flex:none; width:30px; height:30px}
+
+  /* Contacto */
+  .contacto{text-align:center; overflow:hidden}
+  .consulta{overflow:hidden}
+  .contacto .sol-fondo{position:absolute; left:50%; top:50%; width:min(720px,120vw); aspect-ratio:1; translate:-50% -50%; pointer-events:none}
+  .contacto .sol-fondo .puntos{position:absolute; inset:0; border-radius:50%; background-image:radial-gradient(circle,var(--coral) 2px,transparent 2.4px); background-size:14px 14px;
+    -webkit-mask-image:radial-gradient(circle,#000 10%,transparent 66%); mask-image:radial-gradient(circle,#000 10%,transparent 66%); opacity:.3; animation:gira 90s linear infinite}
+  .contacto .sol-fondo .nucleo{position:absolute; inset:34%; border-radius:50%; background:var(--sol-p); animation:late 6s ease-in-out infinite}
+  @keyframes late{50%{scale:1.08}}
+  .contacto .contenedor{position:relative}
+  .contacto h2{font-size:clamp(2.8rem,7vw,6rem)}
+  .contacto p{color:var(--texto-2); max-width:46ch; margin:20px auto 36px}
+  .contacto p a{color:var(--coral-texto); text-underline-offset:4px}
+  .contacto .acciones{justify-content:center}
+  .redes{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:10px 12px; margin-top:26px}
+  .redes span{font:500 .95rem var(--titulos); color:var(--texto-2); margin-right:4px}
+  .redes a{display:inline-flex; align-items:center; gap:9px; padding:9px 16px 9px 12px; border-radius:999px; background:rgba(255,255,255,.7); border:1px solid var(--linea);
+    color:var(--texto); text-decoration:none; transition:background .3s, transform .4s var(--ease)}
+  .redes a:hover{background:#fff; transform:translateY(-2px)}
+  .redes svg{width:20px; height:20px; color:var(--coral-texto)}
+  .redes em{font-style:normal; font-size:.92rem; font-weight:500}
+
+  /* Pie */
+  .pie{background:var(--oscuro); color:#F3EAE2; padding:clamp(60px,8vw,100px) 0 40px; border-radius:clamp(32px,5vw,64px) clamp(32px,5vw,64px) 0 0; overflow:hidden}
+  .gigante{margin:0 0 clamp(30px,5vw,56px); font:600 clamp(3rem,12.6vw,12rem)/.9 var(--titulos); letter-spacing:-.03em; white-space:nowrap}
+  .gigante .ale{color:var(--sol)}
+  .pie-fila{display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px 40px; padding-top:28px; border-top:1px solid rgba(243,234,226,.2); font-size:.92rem; color:#CDBFB4}
+  .pie-fila a{color:#F3EAE2; text-underline-offset:4px}
+  .pie-fila nav{display:flex; flex-wrap:wrap; gap:10px 26px}
+
+  /* Responsivo */
+  @media (max-width:1040px){ .barra nav{display:none} }
+  @media (max-width:860px){
+    .sitios .etq{display:none} .sitios .solo-movil-etq{display:inline} .panel .solo-movil{display:block}
+    .derecha > .boton{display:none}
+    .panel{position:fixed; left:14px; right:14px; top:76px; width:auto; max-height:calc(100svh - 96px); overflow:auto}
+    .barra .contenedor{height:72px}
+    .marca img{height:34px}
+    .portada{padding:100px 0 70px}
+    .portada-grid, .frase-grid, .consulta-grid, .talleres, .sobre-grid{grid-template-columns:1fr}
+    .escena{order:-1; max-width:340px}
+    .ficha-flotante{right:-2%; bottom:4%; font-size:.82rem; padding:12px 14px}
+    .logo-tarjeta{max-width:280px; margin:0 auto}
+    .frase p.grande{text-align:center}
+    .frase .pie-frase{text-align:center}
+    .ficha{padding:6px 22px}
+    .ficha div{grid-template-columns:1fr; gap:2px}
+    .arco-marco{max-width:320px}
+    .camino{display:none}
+    .pasos{grid-template-columns:1fr; gap:34px}
+    .pasos li{padding:0 0 0 100px; min-height:80px}
+    .acciones .boton{flex:1 1 auto; justify-content:center}
+  }
+  @media (max-width:420px){ .logros{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div class="progreso" aria-hidden="true"></div>
+
+<div id="intro" aria-hidden="true">
+  <div class="intro-caja">
+    <svg class="intro-arcos" viewBox="0 0 320 180"><path d="M30 165 A130 130 0 0 1 290 165" stroke="#EE8A73" pathLength="1"/><path d="M62 165 A98 98 0 0 1 258 165" stroke="#F6CF72" pathLength="1"/><path d="M94 165 A66 66 0 0 1 226 165" stroke="#86C9BF" pathLength="1"/></svg>
+    <img class="intro-logo" src="psicoeducale-logo-cuadrado.png" alt="" width="900" height="908">
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <filter id="gis" x="-8%" y="-8%" width="116%" height="116%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="9" result="onda"/>
+    <feDisplacementMap in="SourceGraphic" in2="onda" scale="3" xChannelSelector="R" yChannelSelector="G" result="borde"/>
+    <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="2" result="poro"/>
+    <feColorMatrix in="poro" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.35" result="mascara"/>
+    <feComposite in="borde" in2="mascara" operator="in"/>
+  </filter>
+  <symbol id="corazon" viewBox="0 0 40 36"><path d="M20 34 C14 28 2 22 2 11 C2 4 8 1 13 2 C16 3 18 5 20 8 C22 5 24 3 27 2 C32 1 38 4 38 11 C38 22 26 28 20 34Z"/></symbol>
+  <symbol id="chispa" viewBox="0 0 40 40"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0Z"/></symbol>
+</defs></svg>
+<div class="grano" aria-hidden="true"></div>
+
+<header class="barra" id="barra">
+  <div class="contenedor">
+    <a class="marca" href="#inicio" aria-label="PsicoEducAle, inicio"><img src="psicoeducale-logo-horizontal.png" alt="PsicoEducAle" width="1400" height="242"></a>
+    <nav aria-label="Secciones">
+      <a href="#consulta">Consulta</a>
+      <a href="#talleres">Talleres</a>
+      <a href="#sobre">Quién soy</a>
+      <a href="#agendar">Cómo agendar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="derecha">
+      <div class="sitios" data-sitios>
+        <button type="button" class="sitios-boton" aria-expanded="false" aria-haspopup="true"><span class="etq">Sitios</span><span class="solo-movil-etq">Menú</span></button>
+        <div class="panel">
+          <div class="solo-movil">
+            <p class="grupo">En esta página</p>
+            <a href="#consulta">Consulta</a>
+            <a href="#talleres">Talleres</a>
+            <a href="#sobre">Quién soy</a>
+            <a href="#agendar">Cómo agendar</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+          <p class="grupo">Sitios</p>
+          <a href="https://alejandraconsultora.com">Inicio<small>Psic. Alejandra García Franco</small></a>
+          <a href="https://empresas.alejandraconsultora.com">Capacitación para empresas<small>Conferencias, talleres y consultoría</small></a>
+          <a href="https://psicoeducale.alejandraconsultora.com" aria-current="page">PsicoEducAle<small>Familias y escuelas</small></a>
+          <a class="boton-panel solo-movil" href="https://calendar.app.google/fcngQjLCrYA8TQuJA" target="_blank" rel="noopener">Agenda tu cita</a>
+        </div>
+      </div>
+      <a class="boton coral" href="https://calendar.app.google/fcngQjLCrYA8TQuJA" target="_blank" rel="noopener" data-magnetic>Agenda tu cita</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="portada" data-mouse-zona>
+    <div class="contenedor portada-grid">
+      <div>
+        <p class="etiqueta revelar">PsicoEducAle · Psic. Alejandra García Franco</p>
+        <h1 data-split>Criar y educar con <span class="tono">límites</span> <span class="subraya tono">y afecto<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 100 18, 197 6" fill="none" stroke="#F6CF72" stroke-width="7" stroke-linecap="round" pathLength="1"/></svg></span></h1>
+        <p class="lead revelar" style="--d:.45s">Acompañamiento psicológico para niñas, niños y familias. Un espacio para entender lo que está pasando en casa o en la escuela y encontrar juntos nuevas formas de convivir.</p>
+        <div class="acciones revelar" style="--d:.6s">
+          <a class="boton coral" href="https://calendar.app.google/fcngQjLCrYA8TQuJA" target="_blank" rel="noopener" data-magnetic><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 3v4M16 3v4M3 10h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Agenda tu cita</a>
+          <a class="boton suave" href="#talleres" data-magnetic>Ver talleres</a>
+        </div>
+        <div class="datos-rapidos revelar" style="--d:.75s"><span><i></i>Presencial en Ajijic</span><span><i></i>En línea</span><span><i></i>Martes, miércoles y viernes</span></div>
+      </div>
+      <div class="escena">
+        <div class="blob-borde" aria-hidden="true"></div>
+        <div class="blob"><img src="psicoeducale-manual-coral.jpg" alt="Alejandra García Franco, psicóloga, sonriendo con su Manual de las emociones" width="720" height="904"></div>
+        <svg class="sticker s-sol" viewBox="0 0 100 100" aria-hidden="true"><g filter="url(#gis)"><g class="rayos" stroke="#F6CF72" stroke-width="7" stroke-linecap="round"><path d="M50 4v12M50 84v12M4 50h12M84 50h12M17 17l9 9M74 74l9 9M83 17l-9 9M26 74l-9 9"/></g><circle cx="50" cy="50" r="24" fill="#F6CF72"/></g></svg>
+        <svg class="sticker s-arco" viewBox="0 0 160 90" aria-hidden="true"><g filter="url(#gis)" fill="none" stroke-width="18" stroke-linecap="round"><path d="M14 82 A66 66 0 0 1 146 82" stroke="#EE8A73"/><path d="M38 82 A42 42 0 0 1 122 82" stroke="#F6CF72" class="mezcla"/><path d="M62 82 A18 18 0 0 1 98 82" stroke="#86C9BF" class="mezcla"/></g></svg>
+        <svg class="sticker s-estrella" viewBox="0 0 40 40" aria-hidden="true"><use href="#chispa" fill="#BFAEDD" filter="url(#gis)"/></svg>
+        <svg class="sticker s-chispa" viewBox="0 0 40 40" aria-hidden="true"><use href="#chispa" fill="#86C9BF" filter="url(#gis)"/></svg>
+        <svg class="sticker s-corazon" viewBox="0 0 40 36" aria-hidden="true"><use href="#corazon" fill="#EE8A73" filter="url(#gis)"/></svg>
+        <div class="ficha-flotante"><span class="icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#2C675F" stroke-width="2"/><path d="M12 7v5l3 2" stroke="#2C675F" stroke-width="2" stroke-linecap="round" fill="none"/></svg></span><span><b>Sesiones de 50 min</b>Presencial o en línea</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="banda-env">
+    <div class="banda marquesina" aria-label="Temas: crianza con límites y afecto, emociones, disciplina positiva, convivencia escolar y acompañamiento a familias">
+      <div class="pista" aria-hidden="true"><span>Crianza con límites y afecto</span><svg viewBox="0 0 40 36"><use href="#corazon" fill="#FFFBF5"/></svg><span>Emociones</span><svg viewBox="0 0 40 40"><use href="#chispa" fill="#F6CF72"/></svg><span>Disciplina positiva</span><svg viewBox="0 0 40 36"><use href="#corazon" fill="#FFFBF5"/></svg><span>Convivencia escolar</span><svg viewBox="0 0 40 40"><use href="#chispa" fill="#F6CF72"/></svg><span>Acompañamiento a familias</span><svg viewBox="0 0 40 36"><use href="#corazon" fill="#FFFBF5"/></svg></div>
+      <div class="pista" aria-hidden="true"><span>Crianza con límites y afecto</span><svg viewBox="0 0 40 36"><use href="#corazon" fill="#FFFBF5"/></svg><span>Emociones</span><svg viewBox="0 0 40 40"><use href="#chispa" fill="#F6CF72"/></svg><span>Disciplina positiva</span><svg viewBox="0 0 40 36"><use href="#corazon" fill="#FFFBF5"/></svg><span>Convivencia escolar</span><svg viewBox="0 0 40 40"><use href="#chispa" fill="#F6CF72"/></svg><span>Acompañamiento a familias</span><svg viewBox="0 0 40 36"><use href="#corazon" fill="#FFFBF5"/></svg></div>
+    </div>
+  </div>
+
+  <section class="frase">
+    <div class="contenedor frase-grid">
+      <div class="revelar"><div class="logo-tarjeta" data-tilt><img src="psicoeducale-logo-cuadrado.png" alt="Logotipo de PsicoEducAle: un niño lleno de ideas y una mujer que le ofrece un corazón" width="900" height="908" loading="lazy"></div></div>
+      <div>
+        <p class="grande" data-ilumina>Todo lo que nos sucede tiene un porqué, <span class="acento">y un cómo puede mejorar.</span></p>
+        <p class="pie-frase revelar">Te acompaño a criar y educar con límites y afecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="consulta" class="consulta">
+    <svg class="deco" viewBox="0 0 220 220" aria-hidden="true"><circle cx="110" cy="110" r="70" fill="none" stroke="#EE8A73" stroke-width="2" stroke-dasharray="4 10" stroke-linecap="round"/></svg>
+    <div class="contenedor consulta-grid">
+      <div>
+        <p class="etiqueta revelar">Consulta</p>
+        <h2 data-split>Consulta psicológica</h2>
+        <p class="texto revelar">Sesiones individuales con un enfoque humanista, cercano y respetuoso. Te acompaño a ti, a tu hija o a tu hijo en lo que están viviendo.</p>
+        <ul class="para-quien" aria-label="Para quién" data-escalonado>
+          <li>Niñas y niños</li><li>Adolescentes</li><li>Madres y padres</li><li>Adultos</li>
+        </ul>
+        <a class="boton coral revelar" href="https://calendar.app.google/fcngQjLCrYA8TQuJA" target="_blank" rel="noopener" data-magnetic>Agenda tu consulta</a>
+      </div>
+      <dl class="ficha" data-escalonado>
+        <div><dt>Duración</dt><dd>50 minutos</dd></div>
+        <div><dt>Modalidad</dt><dd>Presencial en Ajijic, Jalisco, o en línea</dd></div>
+        <div><dt>Días</dt><dd>Martes, miércoles y viernes</dd></div>
+        <div><dt>Pago</dt><dd>El día de la sesión, en efectivo o por transferencia</dd></div>
+        <div><dt>Precio</dt><dd>Escríbeme por WhatsApp y te comparto la información</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="talleres">
+    <div class="contenedor">
+      <div class="cabeza">
+        <p class="etiqueta aqua revelar">Talleres</p>
+        <h2 data-split>Para familias y escuelas</h2>
+        <p class="revelar">Espacios prácticos para aprender en grupo, con herramientas que se pueden usar desde el día siguiente.</p>
+      </div>
+      <div class="talleres" data-escalonado>
+        <article class="taller crianza" data-tilt>
+          <svg class="icono" viewBox="0 0 88 64" aria-hidden="true"><g filter="url(#gis)"><circle cx="30" cy="34" r="26" fill="#86C9BF"/><circle cx="60" cy="44" r="17" fill="#EE8A73" class="mezcla"/></g></svg>
+          <span class="quien">Para madres y padres</span>
+          <h3>Crianza con límites y afecto</h3>
+          <p>Cómo poner límites sin perder la cercanía, acompañar las emociones de tus hijos y mejorar la comunicación en casa.</p>
+        </article>
+        <article class="taller escuela" data-tilt>
+          <svg class="icono" viewBox="0 0 88 64" aria-hidden="true"><g filter="url(#gis)"><path d="M6 30 L32 8 L58 30 V60 H6Z" fill="#BFAEDD"/><circle cx="58" cy="42" r="17" fill="#F6CF72" class="mezcla"/></g></svg>
+          <span class="quien">Para escuelas y maestros</span>
+          <h3>Convivencia escolar</h3>
+          <p>Talleres para docentes y comunidades escolares:</p>
+          <ul>
+            <li>Disciplina positiva en el aula</li>
+            <li>Estrategias en el aula</li>
+            <li>Resolución de conflictos en la escuela</li>
+            <li>Habilidades del siglo XXI para docentes</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre" style="padding-top:20px">
+    <div class="contenedor sobre-grid">
+      <div class="arco-marco">
+        <div class="contorno" aria-hidden="true"></div>
+        <div class="foto" data-reveal="clip"><img src="alejandra-retrato-coral.jpg" alt="Alejandra García Franco, psicóloga, sonriendo" width="900" height="900" loading="lazy"></div>
+        <div class="punto-sol" data-parallax=".08" aria-hidden="true"></div>
+      </div>
+      <div>
+        <p class="etiqueta lila revelar">Quién te acompaña</p>
+        <h2 data-split>Psic. Alejandra García Franco</h2>
+        <p class="destacado revelar">Soy psicóloga y maestra en Educación. Desde hace más de 15 años acompaño a niñas, niños, adolescentes, familias y equipos docentes.</p>
+        <p class="revelar">He coordinado equipos docentes con disciplina positiva y estrategias de convivencia sana. En mi coordinación más reciente logramos:</p>
+        <div class="logros" data-escalonado>
+          <div class="logro"><strong>−<span data-count="90">90</span>%</strong><span>de incidencias en la convivencia escolar</span></div>
+          <div class="logro"><strong>+<span data-count="80">80</span>%</strong><span>en el vínculo con las familias</span></div>
+        </div>
+        <p class="revelar">Trabajo desde un enfoque humanista: escucho sin juzgar y busco, contigo, herramientas prácticas para la vida diaria en casa y en el aula.</p>
+        <ul class="credenciales" aria-label="Formación" data-escalonado>
+          <li>Licenciada en Psicología</li><li>Maestría en Educación</li><li>Diplomado en Terapia Infantil</li><li>Diplomado en Neuropsicología</li><li>Disciplina positiva</li>
+        </ul>
+        <a class="boton suave revelar" href="https://alejandraconsultora.com" data-magnetic>Conoce su trayectoria</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="agendar">
+    <div class="contenedor">
+      <div class="cabeza">
+        <p class="etiqueta sol revelar">Cómo agendar</p>
+        <h2 data-split>Tu cita en tres pasos</h2>
+      </div>
+      <div class="pasos-env" data-dibuja>
+        <svg class="camino" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true"><path d="M40 30 C 200 -10, 300 70, 500 30 S 800 -10, 960 30" fill="none" stroke="#EE8A73" stroke-width="2.5" stroke-dasharray="1" stroke-linecap="round" pathLength="1"/></svg>
+        <ol class="pasos" data-escalonado>
+          <li><h3>Elige tu horario</h3><p>Reserva en línea el día y la hora que te acomoden. Si lo prefieres, escríbeme por WhatsApp y lo agendamos juntos.</p><a class="boton coral" href="https://calendar.app.google/fcngQjLCrYA8TQuJA" target="_blank" rel="noopener" data-magnetic>Reservar en línea</a></li>
+          <li><h3>Recibe tu confirmación</h3><p>Te llega un correo con los datos de tu cita, y te confirmo por WhatsApp si será presencial o en línea.</p></li>
+          <li><h3>Asiste a tu sesión</h3><p>El pago se realiza el día de la sesión.</p></li>
+        </ol>
+      </div>
+      <p class="politica revelar"><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="#BFAEDD"/><path d="M15 8v8M15 20.5v.5" stroke="#FFFBF5" stroke-width="2.6" stroke-linecap="round"/></svg>Si necesitas cancelar o cambiar tu cita, avísame con al menos 24 horas de anticipación.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="sol-fondo" aria-hidden="true"><div class="puntos"></div><div class="nucleo"></div></div>
+    <div class="contenedor">
+      <h2 data-split>¿Platicamos?</h2>
+      <p class="revelar">Escríbeme con tus dudas o para agendar. Te respondo lo antes posible.<br>También por correo: <a href="mailto:alejandrafrancoconsultora@gmail.com">alejandrafrancoconsultora@gmail.com</a></p>
+      <div class="acciones revelar">
+        <a class="boton coral" href="https://wa.me/523310273102?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" data-magnetic>Escribir por WhatsApp</a>
+        <a class="boton suave" href="https://calendar.app.google/fcngQjLCrYA8TQuJA" target="_blank" rel="noopener" data-magnetic>Reservar en línea</a>
+      </div>
+      <div class="redes revelar" style="--d:.15s">
+        <span>Sígueme</span>
+        <a href="https://www.instagram.com/psicoeducale/" target="_blank" rel="noopener" aria-label="PsicoEducAle en Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><em>@psicoeducale</em></a>
+        <a href="https://www.facebook.com/psicoeducale" target="_blank" rel="noopener" aria-label="PsicoEducAle en Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.47A20 20 0 0 0 14.3 4.3c-2.2 0-3.7 1.34-3.7 3.8v2.4H8.1v3h2.5V21h2.9Z"/></svg><em>PsicoEducAle</em></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p class="gigante" data-split aria-label="PsicoEducAle">PsicoEduc<span class="ale">Ale</span></p>
+    <div class="pie-fila">
+      <nav aria-label="Sitios">
+        <a href="https://alejandraconsultora.com">Psic. Alejandra García Franco</a>
+        <a href="https://empresas.alejandraconsultora.com">Capacitación para empresas</a>
+        <a href="https://wa.me/523310273102">WhatsApp 33 1027 3102</a>
+        <a href="https://www.instagram.com/psicoeducale/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/psicoeducale" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+      <span>Ajijic, Jalisco · Sitio realizado por <a href="https://oraculoanalytics.com">Oráculo Analytics</a></span>
+    </div>
+  </div>
+</footer>
+<a class="wa-flotante" href="https://wa.me/523310273102?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp" data-etq="Escríbeme por WhatsApp" style="--wa-fondo:#EE8A73;--wa-icono:#2E1B14"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.88 2.4 1 2.56c.13.17 1.74 2.65 4.21 3.72.59.25 1.05.4 1.4.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg></a>
+</body>
+</html>

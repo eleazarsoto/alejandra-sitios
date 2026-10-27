@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capacitación en resolución de conflictos para empresas | Psic. Alejandra García Franco</title>
+<meta name="description" content="Conferencias, talleres y consultoría para equipos de trabajo: resolución de conflictos, liderazgo, comunicación asertiva y convivencia sana en el trabajo. Ajijic, Jalisco, presencial y en línea.">
+<meta property="og:title" content="Psic. Alejandra García Franco · Capacitación y consultoría">
+<meta property="og:description" content="Los conflictos no se evitan, se transforman. Conferencias, talleres y consultoría para equipos de trabajo.">
+<meta property="og:image" content="https://empresas.alejandraconsultora.com/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F8F5F0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='6' y='14' width='44' height='16' rx='8' fill='%23D99A3A'/><rect x='14' y='26' width='44' height='16' rx='8' fill='%238FA58A' fill-opacity='.9'/><rect x='8' y='38' width='44' height='16' rx='8' fill='%23E3BCA5' fill-opacity='.9'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{if(!sessionStorage.getItem('intro-visto')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)r.classList.add('con-intro')}catch(e){}setTimeout(function(){if(!window.__motion)r.classList.remove('js','con-intro')},3500)})()</script>
+<link rel="stylesheet" href="motion.css">
+<script src="motion.js" defer></script>
+<style>
+  :root{
+    --papel:#F8F5F0; --superficie:#EFE9E1; --texto:#3F3935; --texto-2:#675F58; --linea:#DDD4C9;
+    --miel:#D99A3A; --salvia:#8FA58A; --rosa:#E3BCA5; --trigo:#F1DDA6;
+    --salvia-texto:#4B6650; --miel-texto:#8A5C17; --salvia-p:#E3EADE; --rosa-p:#F3E2D7;
+    --oscuro:#34302D; --claro-sobre-oscuro:#EDE6DD; --suave-sobre-oscuro:#B9AFA5;
+    --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+    --sans:'Source Sans 3', 'Segoe UI', Arial, sans-serif;
+    --ancho:1240px; --progreso:var(--miel);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:96px; -webkit-text-size-adjust:100%}
+  body{margin:0; background:var(--papel); color:var(--texto); font:400 1.125rem/1.7 var(--sans); -webkit-font-smoothing:antialiased; overflow-x:clip}
+  img{max-width:100%; display:block}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--salvia-texto); outline-offset:4px; border-radius:6px}
+  ::selection{background:var(--trigo); color:var(--texto)}
+  .contenedor{max-width:var(--ancho); margin:0 auto; padding:0 clamp(20px,4vw,44px)}
+  h1,h2,h3{font-family:var(--serif); font-weight:300; line-height:1.04; margin:0; font-variation-settings:"opsz" 144; letter-spacing:-.018em}
+  em{font-style:italic; color:var(--salvia-texto)}
+  section{padding:clamp(96px,12vw,168px) 0; position:relative}
+  .etiqueta{display:flex; align-items:center; gap:14px; margin:0 0 26px; font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--salvia-texto)}
+  .etiqueta::before{content:""; width:30px; height:1px; background:currentColor}
+  .mezcla{mix-blend-mode:multiply}
+  .grano{position:fixed; inset:0; pointer-events:none; z-index:90; opacity:.055; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .22 0 0 0 0 .2 0 0 0 0 .18 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* Botones con relleno de tinta */
+  .boton{position:relative; isolation:isolate; overflow:hidden; display:inline-flex; align-items:center; gap:12px; padding:17px 30px; border-radius:999px;
+    font:600 .98rem/1 var(--sans); text-decoration:none; border:1px solid var(--texto); cursor:pointer;
+    transition:color .45s var(--ease), border-color .45s ease, transform .6s var(--ease)}
+  .boton::before{content:""; position:absolute; inset:-2px; z-index:-1; background:var(--relleno,var(--miel)); clip-path:circle(0% at 50% 120%); transition:clip-path .7s var(--ease)}
+  .boton:hover::before{clip-path:circle(140% at 50% 120%)}
+  .boton.lleno{background:var(--texto); color:var(--papel)}
+  .boton.lleno:hover{color:var(--texto); border-color:var(--miel)}
+  .boton.contorno{--relleno:var(--texto)}
+  .boton.contorno:hover{color:var(--papel)}
+  .boton.claro{background:var(--papel); color:var(--texto); border-color:var(--papel)}
+  .boton.claro:hover{color:var(--texto); border-color:var(--miel)}
+  .boton .punto{width:8px; height:8px; border-radius:50%; background:currentColor}
+
+  /* Intro de impresión */
+  #intro{background:var(--papel)}
+  .intro-compo{position:relative; width:min(62vw,340px); aspect-ratio:1.25}
+  .intro-compo svg{position:absolute; width:78%; height:auto; overflow:visible}
+  .intro-compo .i1{top:6%; left:0; animation:imprime 1s var(--ease) .1s both}
+  .intro-compo .i2{top:34%; left:20%; animation:imprime 1s var(--ease) .35s both}
+  .intro-compo .i3{top:62%; left:5%; animation:imprime 1s var(--ease) .6s both}
+  @keyframes imprime{from{opacity:0; transform:translate(-70px,26px)} to{opacity:1; transform:none}}
+  .intro-nombre{position:absolute; left:0; right:0; bottom:12vh; text-align:center; margin:0; font:italic 300 clamp(1.3rem,2.6vw,1.8rem)/1 var(--serif); color:var(--texto); animation:aparece 1s var(--ease) .8s both}
+  .intro-reg{position:absolute; top:10vh; right:10vw; width:40px; animation:gira 4s linear infinite, aparece .6s ease .2s both}
+  @keyframes aparece{from{opacity:0; transform:translateY(14px)} to{opacity:1; transform:none}}
+
+  /* Barra */
+  .barra{position:fixed; inset:0 0 auto 0; z-index:60; border-bottom:1px solid transparent}
+  .barra.con-linea{background:rgba(248,245,240,.84); backdrop-filter:blur(14px) saturate(1.2); -webkit-backdrop-filter:blur(14px) saturate(1.2); border-bottom-color:var(--linea)}
+  .barra .contenedor{display:flex; align-items:center; justify-content:space-between; gap:24px; height:84px}
+  .marca{font-family:var(--serif); font-size:1.22rem; text-decoration:none; line-height:1.15; font-variation-settings:"opsz" 144}
+  .marca small{display:block; font-family:var(--sans); font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--texto-2); margin-top:2px}
+  .barra nav{display:flex; gap:36px; font-size:.98rem}
+  .barra nav a{position:relative; text-decoration:none; color:var(--texto-2); transition:color .3s}
+  .barra nav a::after{content:""; position:absolute; left:0; right:0; bottom:-4px; height:1px; background:currentColor; transform:scaleX(0); transform-origin:right; transition:transform .5s var(--ease)}
+  .barra nav a:hover{color:var(--texto)}
+  .barra nav a:hover::after{transform:scaleX(1); transform-origin:left}
+  .derecha{display:flex; align-items:center; gap:12px}
+  .barra .boton{padding:13px 22px; font-size:.92rem}
+
+  .sitios{position:relative}
+  .sitios-boton{display:flex; align-items:center; gap:10px; padding:12px 18px; border-radius:999px; border:1px solid var(--linea); background:transparent; color:var(--texto-2); font:inherit; font-size:.92rem; cursor:pointer; transition:border-color .3s, color .3s}
+  .sitios-boton:hover, .sitios.abierto .sitios-boton{color:var(--texto); border-color:var(--texto-2)}
+  .sitios-boton::after{content:""; width:6px; height:6px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:translateY(-2px) rotate(45deg); transition:transform .3s}
+  .sitios.abierto .sitios-boton::after{transform:translateY(1px) rotate(-135deg)}
+  .solo-movil-etq, .panel .solo-movil{display:none}
+  .panel{position:absolute; right:0; top:calc(100% + 12px); width:300px; display:flex; flex-direction:column; padding:10px; border-radius:20px; background:var(--papel); border:1px solid var(--linea);
+    box-shadow:0 30px 60px -30px rgba(52,48,45,.45); opacity:0; translate:0 -8px; pointer-events:none; transition:opacity .35s ease, translate .5s var(--ease)}
+  .sitios.abierto .panel{opacity:1; translate:none; pointer-events:auto}
+  .panel a{display:block; padding:12px 14px; border-radius:12px; text-decoration:none; color:var(--texto); line-height:1.3; transition:background .25s}
+  .panel a:hover, .panel a[aria-current="page"]{background:var(--superficie)}
+  .panel a[aria-current="page"]{font-weight:600}
+  .panel a small{display:block; color:var(--texto-2); font-size:.82rem; font-weight:400; margin-top:2px}
+  .panel .grupo{font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--texto-2); padding:10px 14px 4px; margin:0}
+  .panel a.boton-panel{margin-top:8px; text-align:center; background:var(--texto); color:var(--papel); border-radius:999px; font-weight:600}
+
+  /* Portada */
+  .portada{min-height:100svh; display:flex; flex-direction:column; justify-content:center; padding:130px 0 110px; overflow:hidden}
+  .portada-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(24px,4vw,64px); align-items:center}
+  .portada h1{font-size:clamp(3rem,6.6vw,6.8rem); line-height:.96; letter-spacing:-.03em}
+  .lead{font-size:clamp(1.08rem,1.35vw,1.28rem); color:var(--texto-2); max-width:47ch; margin:36px 0 44px}
+  .acciones{display:flex; flex-wrap:wrap; gap:14px}
+  .compo{position:relative; width:100%; max-width:560px; aspect-ratio:1; justify-self:end}
+  .compo .capa{position:absolute; width:78%; height:auto; overflow:visible; mix-blend-mode:multiply;
+    transform:translate3d(calc(var(--mx,0) * var(--f,0) * 1px), calc(var(--my,0) * var(--f,0) * 1px + var(--sy,0) * var(--v,0) * 1px), 0)}
+  .compo .c1{top:17%; left:0} .compo .c2{top:38%; left:22%} .compo .c3{top:59%; left:6%}
+  .compo .reg-contorno{top:15.6%; left:1.6%; mix-blend-mode:normal}
+  .js .compo .capa{opacity:0; translate:-80px 46px; transition:opacity 1s ease, translate 1.8s var(--ease)}
+  .listo .compo .capa{opacity:1; translate:none}
+  .listo .compo .c2{transition-delay:.18s} .listo .compo .c3{transition-delay:.36s} .listo .compo .reg-contorno{transition-delay:.9s}
+  .compo .semitono{position:absolute; right:-8%; bottom:-6%; width:62%; aspect-ratio:1; border-radius:50%;
+    background-image:radial-gradient(circle,var(--salvia-texto) 1.5px,transparent 1.8px); background-size:11px 11px;
+    -webkit-mask-image:radial-gradient(circle,#000 18%,transparent 70%); mask-image:radial-gradient(circle,#000 18%,transparent 70%);
+    opacity:.32; animation:gira 80s linear infinite}
+  .compo .marca-reg{position:absolute; width:38px; color:var(--texto); opacity:.75; animation:gira 22s linear infinite}
+  .compo .m1{top:2%; right:4%} .compo .m2{bottom:6%; left:2%; animation-direction:reverse}
+  .portada-pie{position:absolute; left:0; right:0; bottom:28px}
+  .portada-pie .contenedor{display:flex; justify-content:space-between; align-items:center; font-size:.85rem; color:var(--texto-2); letter-spacing:.04em}
+  .desliza{display:flex; align-items:center; gap:14px}
+  .desliza i{position:relative; width:1px; height:44px; background:var(--linea); overflow:hidden}
+  .desliza i::after{content:""; position:absolute; left:0; top:0; width:1px; height:50%; background:var(--texto); animation:baja 2.2s var(--ease) infinite}
+  @keyframes baja{from{transform:translateY(-100%)} to{transform:translateY(200%)}}
+
+  /* Banda de temas */
+  .banda-env{overflow:hidden; padding:34px 0; margin:-34px 0; position:relative; z-index:2}
+  .banda{transform:rotate(-1.6deg); margin:0 -30px; background:var(--oscuro); color:var(--claro-sobre-oscuro); padding:26px 0; position:relative; z-index:2}
+  .banda .pista{gap:48px; padding-right:48px; font:italic 300 clamp(1.6rem,3.2vw,2.8rem)/1.1 var(--serif); white-space:nowrap}
+  .banda .sep{width:38px; height:13px; border-radius:7px; background:var(--miel); flex:none}
+  .banda .sep.s2{background:var(--salvia)} .banda .sep.s3{background:var(--rosa)}
+
+  /* Cifras */
+  .cifras{padding:clamp(80px,10vw,130px) 0 0}
+  .cifras-grid{display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--texto)}
+  .cifra{padding:34px 34px 0 0}
+  .cifra + .cifra{padding-left:34px; border-left:1px solid var(--linea)}
+  .cifra strong{display:flex; align-items:baseline; font:300 clamp(3.4rem,7vw,6.4rem)/1 var(--serif); letter-spacing:-.04em; font-variation-settings:"opsz" 144}
+  .cifra strong sup{font-size:.42em; color:var(--miel-texto); margin-left:4px; top:0; vertical-align:baseline; align-self:flex-start; margin-top:.18em}
+  .cifra p{margin:14px 0 0; color:var(--texto-2); max-width:24ch}
+
+  /* Manifiesto */
+  .manifiesto .grande{margin:0; font:300 clamp(2.1rem,4.9vw,4.7rem)/1.1 var(--serif); letter-spacing:-.025em; max-width:21ch; font-variation-settings:"opsz" 144}
+  .manifiesto .grande em{font-style:italic}
+  .firma{display:flex; align-items:center; gap:18px; margin-top:44px; color:var(--texto-2)}
+  .firma svg{width:120px; height:24px; overflow:visible}
+  .firma path{stroke-dasharray:1; stroke-dashoffset:1; transition:stroke-dashoffset 2s var(--ease) .4s}
+  .firma.visible path{stroke-dashoffset:0}
+
+  /* Encabezado de sección */
+  .cabeza{display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,6vw,96px); align-items:end; margin-bottom:clamp(48px,6vw,80px)}
+  .cabeza h2{font-size:clamp(2.3rem,4.4vw,4rem)}
+  .cabeza p{margin:0; color:var(--texto-2); max-width:50ch}
+
+  /* Servicios: tarjetas que se apilan */
+  .pila{display:grid; gap:28px}
+  .tarjeta{position:sticky; top:calc(112px + var(--n) * 26px); min-height:min(64vh,560px); border-radius:32px; padding:clamp(28px,4.5vw,64px);
+    display:grid; grid-template-columns:auto 1fr .9fr; gap:clamp(20px,4vw,56px); align-items:center;
+    transform-origin:50% 0; scale:calc(1 - var(--cubre,0) * .06); filter:brightness(calc(1 - var(--cubre,0) * .06)); box-shadow:0 -1px 0 rgba(255,255,255,.6) inset}
+  .tarjeta.t1{background:var(--superficie)} .tarjeta.t2{background:var(--salvia-p)} .tarjeta.t3{background:var(--rosa-p)}
+  .t-num{align-self:start; font:300 clamp(1rem,1.3vw,1.15rem)/1 var(--sans); letter-spacing:.14em; color:var(--texto-2)}
+  .tarjeta h3{font-size:clamp(2.4rem,5.4vw,5rem); letter-spacing:-.03em}
+  .duracion{display:inline-block; margin:22px 0 18px; padding:8px 16px; border-radius:999px; background:rgba(255,255,255,.55); font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; font-weight:600; color:var(--miel-texto)}
+  .tarjeta p.desc{margin:0; color:var(--texto-2); max-width:38ch; font-size:1.12rem}
+  .t-icono{width:100%; max-width:340px; height:auto; justify-self:end; overflow:visible}
+
+  /* Temas */
+  .temas{background:var(--oscuro); color:var(--claro-sobre-oscuro)}
+  .temas .etiqueta{color:var(--trigo)}
+  .temas .cabeza p{color:var(--suave-sobre-oscuro)}
+  .temas em{color:var(--trigo)}
+  .temas .tinta-cursor{mix-blend-mode:normal}
+  .lista{list-style:none; margin:0; padding:0; border-top:1px solid rgba(237,230,221,.22); position:relative; z-index:5}
+  .lista li{position:relative; display:grid; grid-template-columns:1.5fr 1fr 230px; gap:32px; align-items:center; padding:clamp(22px,2.6vw,34px) 0; border-bottom:1px solid rgba(237,230,221,.22); cursor:default}
+  .lista h3{font-size:clamp(1.6rem,3.2vw,2.8rem); transition:translate .7s var(--ease), color .4s}
+  .lista .para{color:var(--suave-sobre-oscuro)}
+  .lista .como{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
+  .lista .como span{padding:7px 14px; border:1px solid rgba(237,230,221,.3); border-radius:999px; font-size:.82rem; white-space:nowrap}
+  @media (hover:hover){ .lista li:hover h3{translate:18px 0} }
+  .temas .tinta-cursor{z-index:3}
+  .temas .nota{margin:40px 0 0; color:var(--suave-sobre-oscuro)}
+  .temas .nota a{color:var(--trigo); text-underline-offset:5px}
+
+  /* Método */
+  .incluye{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:20px}
+  .incluye li{padding:30px 26px 34px; border-radius:24px; background:var(--superficie); display:flex; flex-direction:column; gap:22px; min-height:250px}
+  .incluye svg{width:62px; height:40px; overflow:visible}
+  .incluye h3{font-size:1.5rem; line-height:1.15}
+  .incluye p{margin:0; color:var(--texto-2); font-size:1rem}
+
+  /* Trayectoria */
+  .trayectoria{background:var(--superficie)}
+  .tiempo{list-style:none; margin:0; padding:0; position:relative}
+  .tiempo::before, .tiempo::after{content:""; position:absolute; left:calc(170px + 28px); top:8px; bottom:8px; width:1px; background:var(--linea)}
+  .tiempo::after{background:var(--texto); transform-origin:top; transform:scaleY(var(--p,0))}
+  .tiempo li{display:grid; grid-template-columns:170px 56px 1fr; padding:0 0 clamp(44px,5vw,70px)}
+  .tiempo .anio{font:300 clamp(1.6rem,2.4vw,2.1rem)/1.1 var(--serif); text-align:right; color:var(--texto-2); font-variation-settings:"opsz" 144}
+  .tiempo .nodo{position:relative; z-index:1; justify-self:center; margin-top:10px; width:14px; height:14px; border-radius:50%; background:var(--papel); border:1px solid var(--texto); transition:background .5s, scale .5s var(--ease)}
+  .tiempo li.visible .nodo{background:var(--miel); border-color:var(--miel); scale:1.25}
+  .tiempo h3{font-size:clamp(1.7rem,2.8vw,2.4rem)}
+  .tiempo .rol{margin:8px 0 14px; font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:var(--salvia-texto)}
+  .tiempo p{margin:0; color:var(--texto-2); max-width:60ch}
+  .tiempo .logro{margin-top:18px; padding:18px 22px; border-left:3px solid var(--miel); background:var(--papel); border-radius:0 14px 14px 0; color:var(--texto); font:italic 300 1.2rem/1.45 var(--serif)}
+
+  /* Sobre mí */
+  .sobre{overflow:hidden}
+  .sobre-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(40px,8vw,120px); align-items:center}
+  .foto-marco{position:relative; z-index:0}
+  .foto-marco .trama{position:absolute; inset:9% -9% -9% 9%; z-index:-1; border-radius:4px;
+    background-image:radial-gradient(circle,var(--salvia) 1.5px,transparent 1.8px); background-size:10px 10px; opacity:.7}
+  .foto-marco .foto{aspect-ratio:4/5; overflow:hidden; border-radius:3px; background:var(--superficie)}
+  .foto-marco .foto img{width:100%; height:100%; object-fit:cover; object-position:40% 20%}
+  .foto-marco .registro{position:absolute; inset:-14px 14px 14px -14px; border:1px solid var(--texto); opacity:.4; pointer-events:none}
+  .foto-marco .sello{position:absolute; right:-28px; bottom:44px; width:118px; height:118px; animation:gira 26s linear infinite}
+  .sobre h2{font-size:clamp(2.4rem,4.6vw,4rem); margin-bottom:30px}
+  .sobre .destacado{font:300 clamp(1.4rem,2vw,1.75rem)/1.4 var(--serif); margin:0 0 26px}
+  .sobre p{color:var(--texto-2); margin:0 0 18px; max-width:56ch}
+  .enlace{position:relative; display:inline-block; color:var(--texto); text-decoration:none; font-weight:600}
+  .enlace::after{content:""; position:absolute; left:0; right:0; bottom:-3px; height:1px; background:currentColor; transform-origin:left; transition:transform .5s var(--ease)}
+  .enlace:hover::after{transform:scaleX(.35)}
+
+  /* Contacto */
+  .contacto{background:var(--oscuro); color:var(--claro-sobre-oscuro); padding-bottom:clamp(60px,8vw,110px)}
+  .contacto .etiqueta{color:var(--trigo)}
+  .contacto-grid{display:grid; grid-template-columns:1fr 1.15fr; gap:clamp(40px,7vw,110px); align-items:start}
+  .contacto h2{font-size:clamp(2.8rem,6vw,5.6rem); letter-spacing:-.03em}
+  .contacto h2 em{color:var(--trigo)}
+  .contacto .texto{color:var(--suave-sobre-oscuro); max-width:40ch; margin:28px 0}
+  .contacto .texto a{color:var(--claro-sobre-oscuro); text-underline-offset:5px}
+  .canales{display:grid; gap:10px; margin-top:36px}
+  .canal{display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px 0; border-top:1px solid rgba(237,230,221,.2); text-decoration:none; transition:padding .5s var(--ease), color .3s}
+  .canal span{color:var(--suave-sobre-oscuro); font-size:.85rem; letter-spacing:.1em; text-transform:uppercase}
+  .canal:hover{padding-left:12px; color:var(--trigo)}
+  form{background:var(--papel); color:var(--texto); border-radius:28px; padding:clamp(26px,4vw,48px); display:grid; gap:24px; box-shadow:0 40px 80px -40px rgba(0,0,0,.5)}
+  form h3{font-size:1.8rem}
+  .fila{display:grid; grid-template-columns:1fr 1fr; gap:24px 28px}
+  label{display:grid; gap:6px; font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:var(--texto-2)}
+  input, select, textarea{font:400 1.05rem/1.4 var(--sans); letter-spacing:0; text-transform:none; color:var(--texto); padding:12px 2px; border:0; border-bottom:1px solid #C9BDB0; border-radius:0; background:transparent; transition:border-color .3s}
+  input:focus, select:focus, textarea:focus{outline:none; border-bottom-color:var(--miel)}
+  textarea{min-height:110px; resize:vertical}
+  .oculto{position:absolute; left:-9999px}
+  .aviso-form{margin:4px 0 0; font-size:.95rem; color:inherit; opacity:.85}
+  .aviso-form a{color:inherit}
+  form .boton{justify-self:start; margin-top:6px}
+
+  /* Pie */
+  .pie{background:var(--oscuro); color:var(--claro-sobre-oscuro); padding:20px 0 40px; overflow:hidden}
+  .gigante{margin:0 0 clamp(30px,5vw,60px); font:italic 300 clamp(3.2rem,12.4vw,12.5rem)/.9 var(--serif); letter-spacing:-.045em; font-variation-settings:"opsz" 144; color:var(--claro-sobre-oscuro)}
+  .gigante span.sal{color:var(--trigo)}
+  .pie-fila{display:flex; flex-wrap:wrap; justify-content:space-between; gap:22px 40px; padding-top:28px; border-top:1px solid rgba(237,230,221,.2); font-size:.95rem; color:var(--suave-sobre-oscuro)}
+  .pie-fila a{color:var(--claro-sobre-oscuro); text-underline-offset:4px}
+  .pie-fila nav{display:flex; flex-wrap:wrap; gap:10px 28px}
+
+  /* Responsivo */
+  @media (max-width:1040px){
+    .barra nav{display:none}
+    .tarjeta{grid-template-columns:auto 1fr} .t-icono{grid-column:1/-1; max-width:240px; justify-self:start}
+    .incluye{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:860px){
+    .sitios .etq{display:none} .sitios .solo-movil-etq{display:inline} .panel .solo-movil{display:block}
+    .derecha > .boton{display:none}
+    .panel{position:fixed; left:14px; right:14px; top:76px; width:auto; max-height:calc(100svh - 96px); overflow:auto}
+    .barra .contenedor{height:72px}
+    .portada{padding:110px 0 100px}
+    .portada-grid, .cabeza, .sobre-grid, .contacto-grid{grid-template-columns:1fr}
+    .compo{order:-1; max-width:320px; justify-self:center; margin-bottom:-10px}
+    .cifras-grid{grid-template-columns:1fr}
+    .cifra, .cifra + .cifra{padding:28px 0; border-left:0; border-bottom:1px solid var(--linea)}
+    .tarjeta{top:calc(88px + var(--n) * 16px); min-height:auto; grid-template-columns:1fr; gap:14px; border-radius:24px}
+    .t-icono{max-width:170px}
+    .lista li{grid-template-columns:1fr; gap:10px}
+    .lista .como{justify-content:flex-start}
+    .tiempo::before, .tiempo::after{left:7px}
+    .tiempo li{grid-template-columns:14px 1fr; column-gap:22px}
+    .tiempo .anio{grid-column:2; grid-row:1; text-align:left; font-size:1.3rem; margin-bottom:6px}
+    .tiempo .nodo{grid-column:1; grid-row:1; margin-top:8px}
+    .tiempo .cuerpo{grid-column:2}
+    .foto-marco{max-width:380px}
+    .foto-marco .sello{right:-12px; width:96px; height:96px}
+    .fila{grid-template-columns:1fr}
+    .portada-pie .lugar{display:none}
+  }
+  @media (max-width:560px){
+    .incluye{grid-template-columns:1fr}
+    .incluye li{min-height:auto}
+    .acciones .boton{width:100%; justify-content:center}
+  }
+</style>
+</head>
+<body>
+<div class="progreso" aria-hidden="true"></div>
+
+<div id="intro" aria-hidden="true">
+  <svg class="intro-reg" viewBox="0 0 40 40"><g fill="none" stroke="#3F3935" stroke-width="1.2"><circle cx="20" cy="20" r="9"/><path d="M20 2v36M2 20h36"/></g></svg>
+  <div class="intro-compo">
+    <svg class="i1" viewBox="0 0 400 104"><rect x="0" y="0" width="400" height="104" rx="52" fill="#D99A3A" filter="url(#tinta)"/></svg>
+    <svg class="i2 mezcla" viewBox="0 0 400 104"><rect x="0" y="0" width="400" height="104" rx="52" fill="#8FA58A" filter="url(#tinta)"/></svg>
+    <svg class="i3 mezcla" viewBox="0 0 400 104"><rect x="0" y="0" width="400" height="104" rx="52" fill="#E3BCA5" filter="url(#tinta)"/></svg>
+  </div>
+  <p class="intro-nombre">Alejandra García Franco</p>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <filter id="tinta" x="-4%" y="-6%" width="108%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="r"/><feDisplacementMap in="SourceGraphic" in2="r" scale="2.6" xChannelSelector="R" yChannelSelector="G"/></filter>
+  <pattern id="semitono" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.2" fill="#3F3935"/></pattern>
+  <symbol id="reg" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="20" cy="20" r="9"/><path d="M20 2v36M2 20h36"/></g></symbol>
+</defs></svg>
+<div class="grano" aria-hidden="true"></div>
+
+<header class="barra" id="barra">
+  <div class="contenedor">
+    <a class="marca" href="https://alejandraconsultora.com">Alejandra García Franco<small>Capacitación y consultoría</small></a>
+    <nav aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#temas">Temas</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#sobre">Sobre mí</a>
+    </nav>
+    <div class="derecha">
+      <div class="sitios" data-sitios>
+        <button type="button" class="sitios-boton" aria-expanded="false" aria-haspopup="true"><span class="etq">Sitios</span><span class="solo-movil-etq">Menú</span></button>
+        <div class="panel">
+          <div class="solo-movil">
+            <p class="grupo">En esta página</p>
+            <a href="#servicios">Servicios</a>
+            <a href="#temas">Temas</a>
+            <a href="#trayectoria">Trayectoria</a>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+          <p class="grupo">Sitios</p>
+          <a href="https://alejandraconsultora.com">Inicio<small>Psic. Alejandra García Franco</small></a>
+          <a href="https://empresas.alejandraconsultora.com" aria-current="page">Capacitación para empresas<small>Conferencias, talleres y consultoría</small></a>
+          <a href="https://psicoeducale.alejandraconsultora.com">PsicoEducAle<small>Familias y escuelas</small></a>
+          <a class="boton-panel solo-movil" href="#contacto">Solicitar propuesta</a>
+        </div>
+      </div>
+      <a class="boton lleno" href="#contacto" data-magnetic>Solicitar propuesta</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="portada" id="arriba" data-mouse-zona data-scroll-zona>
+    <div class="contenedor portada-grid">
+      <div>
+        <p class="etiqueta revelar">Psicóloga · Maestra en Educación</p>
+        <h1 data-split>Equipos que <em>se entienden</em> trabajan mejor</h1>
+        <p class="lead revelar" style="--d:.45s">Conferencias, talleres y consultoría para organizaciones que quieren transformar sus conflictos en acuerdos, mejorar la comunicación y construir una convivencia sana en el trabajo.</p>
+        <div class="acciones revelar" style="--d:.6s">
+          <a class="boton lleno" href="#contacto" data-magnetic><span class="punto" aria-hidden="true"></span>Lleva un taller a tu organización</a>
+          <a class="boton contorno" href="https://wa.me/523310273102?text=Hola%20Alejandra%2C%20me%20interesa%20una%20capacitaci%C3%B3n%20para%20mi%20equipo" data-magnetic>Agenda una llamada</a>
+        </div>
+      </div>
+      <div class="compo" aria-hidden="true">
+        <div class="semitono"></div>
+        <svg class="capa c1" style="--f:16; --v:-.07" viewBox="0 0 400 104"><rect width="400" height="104" rx="52" fill="#D99A3A" filter="url(#tinta)"/></svg>
+        <svg class="capa c2" style="--f:-26; --v:.06" viewBox="0 0 400 104"><rect width="400" height="104" rx="52" fill="#8FA58A" filter="url(#tinta)"/><rect width="400" height="104" rx="52" fill="url(#semitono)" opacity=".16"/></svg>
+        <svg class="capa c3" style="--f:34; --v:.16" viewBox="0 0 400 104"><rect width="400" height="104" rx="52" fill="#E3BCA5" filter="url(#tinta)"/></svg>
+        <svg class="capa reg-contorno" style="--f:8; --v:-.05" viewBox="0 0 400 104"><rect x=".5" y=".5" width="399" height="103" rx="51.5" fill="none" stroke="#3F3935" stroke-width="1" opacity=".85"/></svg>
+        <svg class="marca-reg m1"><use href="#reg"/></svg>
+        <svg class="marca-reg m2"><use href="#reg"/></svg>
+      </div>
+    </div>
+    <div class="portada-pie">
+      <div class="contenedor">
+        <span class="desliza"><i></i>Desliza</span>
+        <span class="lugar">Ajijic, Jalisco · Presencial y en línea</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="banda-env">
+  <div class="banda marquesina" aria-label="Temas: resolución de conflictos, liderazgo, comunicación asertiva, equipos de alto desempeño, convivencia sana y servicio al cliente">
+    <div class="pista" aria-hidden="true"><span>Resolución de conflictos</span><i class="sep"></i><span>Liderazgo en pro de la excelencia</span><i class="sep s2"></i><span>Comunicación asertiva</span><i class="sep s3"></i><span>Equipos de alto desempeño</span><i class="sep"></i><span>Convivencia sana en el trabajo</span><i class="sep s2"></i><span>Servicio al cliente con inteligencia emocional</span><i class="sep s3"></i></div>
+    <div class="pista" aria-hidden="true"><span>Resolución de conflictos</span><i class="sep"></i><span>Liderazgo en pro de la excelencia</span><i class="sep s2"></i><span>Comunicación asertiva</span><i class="sep s3"></i><span>Equipos de alto desempeño</span><i class="sep"></i><span>Convivencia sana en el trabajo</span><i class="sep s2"></i><span>Servicio al cliente con inteligencia emocional</span><i class="sep s3"></i></div>
+  </div>
+  </div>
+
+  <div class="cifras">
+    <div class="contenedor">
+      <div class="cifras-grid" data-escalonado>
+        <div class="cifra"><strong><span data-count="15">15</span><sup>+</sup></strong><p>años acompañando a personas, equipos y comunidades</p></div>
+        <div class="cifra"><strong><span data-count="40">40</span><sup>+</sup></strong><p>colaboradores liderados en capital humano a nivel nacional</p></div>
+        <div class="cifra"><strong><span data-count="200">200</span><sup>+</sup></strong><p>participantes coordinados en proyectos educativos y sociales</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="manifiesto">
+    <div class="contenedor">
+      <p class="etiqueta revelar">Enfoque</p>
+      <p class="grande" data-ilumina>Los conflictos no se evitan, <em>se transforman.</em> Todo conflicto tiene un porqué y un cómo puede mejorar.</p>
+      <div class="firma revelar">
+        <svg viewBox="0 0 120 24" aria-hidden="true"><path d="M2 16 C 18 4, 30 22, 46 12 S 74 4, 88 14 S 110 18, 118 8" fill="none" stroke="#D99A3A" stroke-width="2" stroke-linecap="round" pathLength="1"/></svg>
+        <span>Psic. Alejandra García Franco</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" style="padding-top:0">
+    <div class="contenedor">
+      <div class="cabeza">
+        <div><p class="etiqueta revelar">Servicios</p><h2 data-split>Tres formas de trabajar con tu equipo</h2></div>
+        <p class="revelar">Cada organización está en un momento distinto. Podemos empezar con una conferencia para sensibilizar, profundizar con un taller vivencial o acompañar al equipo durante varios meses.</p>
+      </div>
+      <div class="pila">
+        <article class="tarjeta t1" style="--n:0">
+          <span class="t-num">01</span>
+          <div>
+            <h3>Conferencia</h3>
+            <span class="duracion">60 a 90 minutos</span>
+            <p class="desc">Para grupos grandes, eventos internos y congresos. Abre la conversación y deja herramientas prácticas.</p>
+          </div>
+          <svg class="t-icono" viewBox="0 0 340 220" aria-hidden="true"><rect x="10" y="78" width="280" height="72" rx="36" fill="#D99A3A" filter="url(#tinta)"/><rect x="18" y="70" width="280" height="72" rx="36" fill="none" stroke="#3F3935" stroke-width="1" opacity=".7"/></svg>
+        </article>
+        <article class="tarjeta t2" style="--n:1">
+          <span class="t-num">02</span>
+          <div>
+            <h3>Taller vivencial</h3>
+            <span class="duracion">4 a 8 horas</span>
+            <p class="desc">Para equipos que quieren practicar: dinámicas, casos reales de su trabajo y acuerdos concretos.</p>
+          </div>
+          <svg class="t-icono" viewBox="0 0 340 220" aria-hidden="true"><rect x="10" y="44" width="260" height="72" rx="36" fill="#D99A3A" filter="url(#tinta)"/><rect x="60" y="100" width="260" height="72" rx="36" fill="#8FA58A" class="mezcla" filter="url(#tinta)"/><rect x="60" y="100" width="260" height="72" rx="36" fill="url(#semitono)" opacity=".15"/></svg>
+        </article>
+        <article class="tarjeta t3" style="--n:2">
+          <span class="t-num">03</span>
+          <div>
+            <h3>Consultoría</h3>
+            <span class="duracion">Programas de varios meses</span>
+            <p class="desc">Diagnóstico, sesiones con el equipo y seguimiento, para cambios que se sostienen en el tiempo.</p>
+          </div>
+          <svg class="t-icono" viewBox="0 0 340 220" aria-hidden="true"><rect x="10" y="14" width="250" height="68" rx="34" fill="#D99A3A" filter="url(#tinta)"/><rect x="64" y="70" width="250" height="68" rx="34" fill="#8FA58A" class="mezcla" filter="url(#tinta)"/><rect x="26" y="126" width="250" height="68" rx="34" fill="#E3BCA5" class="mezcla" filter="url(#tinta)"/></svg>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="temas" class="temas">
+    <div class="tinta-cursor" aria-hidden="true"></div>
+    <div class="contenedor">
+      <div class="cabeza">
+        <div><p class="etiqueta revelar">Temas</p><h2 data-split>Conferencias <em>y talleres</em></h2></div>
+        <p class="revelar">Cada tema se adapta al giro, tamaño y necesidades de tu organización.</p>
+      </div>
+      <ul class="lista" data-tinta-zona data-escalonado>
+        <li data-tinta="#D99A3A"><h3>Conflictos que construyen</h3><span class="para">Equipos de trabajo</span><span class="como"><span>Conferencia</span><span>Taller</span></span></li>
+        <li data-tinta="#8FA58A"><h3>Liderazgo en pro de la excelencia</h3><span class="para">Líderes, mandos medios y dirección</span><span class="como"><span>Conferencia</span><span>Taller</span></span></li>
+        <li data-tinta="#E3BCA5"><h3>Equipos de alto desempeño</h3><span class="para">Áreas y equipos de trabajo</span><span class="como"><span>Taller</span><span>Consultoría</span></span></li>
+        <li data-tinta="#D99A3A"><h3>Comunicación asertiva, efectiva y afectiva</h3><span class="para">Toda la organización</span><span class="como"><span>Taller</span></span></li>
+        <li data-tinta="#8FA58A"><h3>Convivencia sana en el trabajo</h3><span class="para">Toda la organización</span><span class="como"><span>Taller</span><span>Consultoría</span></span></li>
+        <li data-tinta="#E3BCA5"><h3>Servicio al cliente con inteligencia emocional</h3><span class="para">Equipos de atención y ventas</span><span class="como"><span>Taller</span></span></li>
+      </ul>
+      <p class="nota revelar">¿Buscas otro tema de desarrollo humano o habilidades blandas? <a href="#contacto">Escríbeme y lo diseñamos juntos.</a></p>
+    </div>
+  </section>
+
+  <section id="metodo">
+    <div class="contenedor">
+      <div class="cabeza">
+        <div><p class="etiqueta revelar">Método</p><h2 data-split>Qué incluye cada capacitación</h2></div>
+        <p class="revelar">Programas diseñados con método: cuento con certificación en diseño e impartición de cursos de capacitación (ICEMÉXICO).</p>
+      </div>
+      <ul class="incluye" data-escalonado>
+        <li><svg viewBox="0 0 62 40" aria-hidden="true"><rect x="2" y="8" width="46" height="24" rx="12" fill="#D99A3A" filter="url(#tinta)"/></svg><h3>Diagnóstico previo</h3><p>Una conversación para entender a tu equipo y ajustar el contenido.</p></li>
+        <li><svg viewBox="0 0 62 40" aria-hidden="true"><rect x="2" y="2" width="42" height="22" rx="11" fill="#D99A3A" filter="url(#tinta)"/><rect x="14" y="16" width="42" height="22" rx="11" fill="#8FA58A" class="mezcla" filter="url(#tinta)"/></svg><h3>Material de trabajo</h3><p>Material para cada participante, para seguir aplicando lo aprendido.</p></li>
+        <li><svg viewBox="0 0 62 40" aria-hidden="true"><rect x="2" y="8" width="46" height="24" rx="12" fill="#8FA58A" filter="url(#tinta)"/><rect x="10" y="4" width="46" height="24" rx="12" fill="none" stroke="#3F3935" stroke-width="1"/></svg><h3>Presencial o en línea</h3><p>En tus instalaciones o por videollamada, según lo que necesite tu equipo.</p></li>
+        <!-- PENDIENTE: cambiar a "Constancia DC-3 con validez ante la STPS" cuando tenga su registro como Agente Capacitador Externo -->
+        <li><svg viewBox="0 0 62 40" aria-hidden="true"><rect x="2" y="8" width="46" height="24" rx="12" fill="#E3BCA5" filter="url(#tinta)"/><rect x="16" y="8" width="44" height="24" rx="12" fill="#D99A3A" class="mezcla" filter="url(#tinta)"/></svg><h3>Constancia</h3><p>Constancia de participación para cada asistente.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trayectoria" class="trayectoria">
+    <div class="contenedor">
+      <div class="cabeza">
+        <div><p class="etiqueta revelar">Experiencia</p><h2 data-split>Trayectoria <em>y resultados</em></h2></div>
+        <p class="revelar">Empresas, universidades, instituciones educativas y organizaciones sociales con las que he trabajado.</p>
+      </div>
+      <ol class="tiempo" data-dibuja>
+        <li class="revelar"><span class="anio">2026 – hoy</span><span class="nodo"></span><div class="cuerpo"><h3>Impacta Consultora</h3><p class="rol">Jefa de proyecto y facilitadora</p><p>Talleres de liderazgo, comunicación y equipos de alto desempeño para empresas de distintos giros, entre ellas una especialista en sensores automotrices y un despacho de finanzas y contabilidad.</p><p class="logro">Los clientes solicitaron ampliar el servicio a puestos operativos y entrevistas uno a uno con direcciones.</p></div></li>
+        <li class="revelar"><span class="anio">2026</span><span class="nodo"></span><div class="cuerpo"><h3>Universidad de Guadalajara</h3><p class="rol">Facilitadora</p><p>Diseño e impartición del taller «Habilidades del siglo XXI» para docentes de bachillerato, en cuatro sedes de la Ribera de Chapala y alrededores.</p></div></li>
+        <li class="revelar"><span class="anio">2023</span><span class="nodo"></span><div class="cuerpo"><h3>F5 Transformación Integral</h3><p class="rol">Facilitadora</p><p>Talleres «Liderazgo en pro de la excelencia» y «Comunicación asertiva».</p></div></li>
+        <li class="revelar"><span class="anio">2018 – 2021</span><span class="nodo"></span><div class="cuerpo"><h3>Restaurantes SAVE</h3><p class="rol">Responsabilidad Social y Capital Humano</p><p>Onboarding, capacitación, evaluación de desempeño y clima laboral para equipos de más de 40 personas a nivel nacional.</p><p class="logro">70% de mejora en la comunicación asertiva y la colaboración entre direcciones, operación y Recursos Humanos.</p></div></li>
+        <li class="revelar"><span class="anio">2015 – 2017</span><span class="nodo"></span><div class="cuerpo"><h3>Alianza por una Educación Humanitaria</h3><p class="rol">Tallerista asociada</p><p>Proyecto «Escuelas y comunidades como un espacio seguro», enfocado en resolución de conflictos, junto con escuelas y líderes comunitarios.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="contenedor sobre-grid">
+      <div class="foto-marco">
+        <div class="trama" data-parallax=".06" aria-hidden="true"></div>
+        <div class="foto" data-reveal="clip"><img src="alejandra-conferencia.jpg" alt="Alejandra García Franco impartiendo una conferencia" width="960" height="1200" loading="lazy"></div>
+        <div class="registro" aria-hidden="true"></div>
+        <svg class="sello" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="circulo-sello" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs><circle cx="60" cy="60" r="58" fill="#F8F5F0"/><text font-family="Source Sans 3, Arial, sans-serif" font-size="10" fill="#3F3935" font-weight="600"><textPath href="#circulo-sello" textLength="270" lengthAdjust="spacing">PSICÓLOGA · FACILITADORA · CONSULTORA ·</textPath></text><rect x="40" y="52" width="40" height="16" rx="8" fill="#D99A3A" filter="url(#tinta)"/></svg>
+      </div>
+      <div>
+        <p class="etiqueta revelar">Sobre mí</p>
+        <h2 data-split>Psic. Alejandra <em>García Franco</em></h2>
+        <p class="destacado revelar">Acompaño a personas y equipos a convivir mejor, con un enfoque humanista y práctico.</p>
+        <p class="revelar">Soy psicóloga y facilitadora, con maestría en Educación y formación en Desarrollo Organizacional y Gestión del Cambio. Actualmente soy jefa de proyecto y facilitadora de talleres corporativos en Impacta Consultora.</p>
+        <p class="revelar">He liderado equipos de más de 40 colaboradores, coordinado proyectos con más de 200 participantes y acompañado durante más de 15 años a empresas, escuelas y organizaciones sociales.</p>
+        <p class="revelar">Creo que todo conflicto tiene un porqué y un cómo puede mejorar. Me mueven el bien común y la mejora continua.</p>
+        <p class="revelar" style="margin-top:30px"><a class="enlace" href="https://alejandraconsultora.com">Conoce mi trayectoria</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="contenedor contacto-grid">
+      <div>
+        <p class="etiqueta revelar">Contacto</p>
+        <h2 data-split>Solicita una <em>propuesta</em></h2>
+        <p class="texto revelar">Cuéntame sobre tu equipo y lo que necesita. Te respondo con una propuesta a la medida.</p>
+        <div class="canales revelar">
+          <a class="canal" href="https://wa.me/523310273102">WhatsApp 33 1027 3102<span>Escribir</span></a>
+          <a class="canal" href="mailto:alejandrafrancoconsultora@gmail.com">alejandrafrancoconsultora@gmail.com<span>Correo</span></a>
+        </div>
+      </div>
+      <!-- Formulario con Web3Forms: las solicitudes llegan al correo de Alejandra.
+           Pega la clave de acceso (Access Key) de web3forms.com en el campo access_key. -->
+      <form class="revelar" style="--d:.2s" id="form-empresas" name="solicitud-empresas" method="POST" action="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="PEGAR-CLAVE-WEB3FORMS">
+        <input type="hidden" name="subject" value="Nueva solicitud de capacitación · empresas.alejandraconsultora.com">
+        <input type="hidden" name="from_name" value="Sitio Alejandra García Franco">
+        <input type="hidden" name="redirect" value="https://empresas.alejandraconsultora.com/gracias.html">
+        <p class="oculto"><label>No llenar <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
+        <h3>Cuéntame de tu equipo</h3>
+        <div class="fila">
+          <label>Nombre <input name="nombre" autocomplete="name" required></label>
+          <label>Organización <input name="empresa" autocomplete="organization" required></label>
+        </div>
+        <div class="fila">
+          <label>Correo <input type="email" name="email" autocomplete="email" required></label>
+          <label>Teléfono <input type="tel" name="telefono" autocomplete="tel"></label>
+        </div>
+        <div class="fila">
+          <label>Me interesa
+            <select name="servicio">
+              <option>Conferencia</option>
+              <option>Taller</option>
+              <option>Consultoría</option>
+              <option>Aún no lo sé</option>
+            </select>
+          </label>
+          <label>Número de personas <input name="personas" inputmode="numeric"></label>
+        </div>
+        <label>¿Qué está pasando en tu equipo? <textarea name="mensaje"></textarea></label>
+        <button class="boton lleno" type="submit" data-magnetic><span class="punto" aria-hidden="true"></span>Enviar solicitud</button>
+        <p class="aviso-form" id="aviso-form" role="status" hidden></p>
+      </form>
+      <script>
+        (function(){var f=document.getElementById('form-empresas'),a=document.getElementById('aviso-form');
+          f.addEventListener('submit',function(e){
+            if(f.access_key.value.indexOf('PEGAR')===0){e.preventDefault();a.hidden=false;
+              a.innerHTML='El formulario está en configuración. Mientras tanto, escríbeme por <a href="https://wa.me/523310273102">WhatsApp</a> o a alejandrafrancoconsultora@gmail.com';}
+          });})();
+      </script>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p class="gigante" data-split aria-label="Alejandra García Franco">Alejandra<br>García <span class="sal">Franco</span></p>
+    <div class="pie-fila">
+      <nav aria-label="Sitios">
+        <a href="https://alejandraconsultora.com">Inicio</a>
+        <a href="https://psicoeducale.alejandraconsultora.com">PsicoEducAle · familias y escuelas</a>
+        <a href="#arriba">Volver arriba</a>
+      </nav>
+      <span>Ajijic, Jalisco · Presencial y en línea · Sitio realizado por <a href="https://oraculoanalytics.com">Oráculo Analytics</a></span>
+    </div>
+  </div>
+</footer>
+<a class="wa-flotante" href="https://wa.me/523310273102?text=Hola%20Alejandra%2C%20me%20interesa%20una%20capacitaci%C3%B3n%20para%20mi%20equipo" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp" data-etq="Escríbeme por WhatsApp" style="--wa-fondo:#3F3935;--wa-icono:#F8F5F0"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.88 2.4 1 2.56c.13.17 1.74 2.65 4.21 3.72.59.25 1.05.4 1.4.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg></a>
+</body>
+</html>
