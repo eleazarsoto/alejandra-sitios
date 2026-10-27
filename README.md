@@ -24,7 +24,6 @@ Cada carpeta lleva su propia copia de `motion.js` y `motion.css` (motor de anima
 
 ## Pendientes
 
-- Formulario de empresas: pegar la Access Key de Web3Forms en `empresas/index.html` (campo `access_key`).
 - Cédula profesional en `principal/index.html` (Formación).
 - Constancia DC-3 en `empresas/index.html` (comentario PENDIENTE en Método).
 
