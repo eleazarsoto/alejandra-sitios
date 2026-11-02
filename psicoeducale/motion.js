@@ -95,8 +95,7 @@
     if (barra) {
       barra.classList.toggle('con-linea', y > 12);
       if (!d.querySelector('.sitios.abierto')) {
-        if (y > ultimoY + 6 && y > 240) barra.classList.add('oculta');
-        else if (y < ultimoY - 6 || y < 240) barra.classList.remove('oculta');
+        barra.classList.remove('oculta'); /* barra siempre visible */
       }
     }
     ultimoY = y;
