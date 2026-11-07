@@ -228,6 +228,33 @@
     .acciones .boton{flex:1 1 auto; justify-content:center}
   }
   @media (max-width:560px){ .credenciales{grid-template-columns:1fr} .credencial{min-height:auto} }
+
+  /* ===== Capa de pulido · nov 2026 (no cambia diseño: ritmo, tipografía, botones, celular) ===== */
+  picture{display:contents}
+  h1,h2,h3,.gigante,.opcion strong,.puerta h3{text-wrap:balance}
+  p,li,dd,blockquote{text-wrap:pretty}
+  .nw{white-space:nowrap}
+  .opcion strong .nw{font:inherit; letter-spacing:inherit; text-transform:none; opacity:1}
+  [data-count]{font-variant-numeric:tabular-nums}
+  /* Botones: una altura para la barra (44) y otra para la página (52), mismo trato en todos */
+  .boton{min-height:52px; justify-content:center; transition:color .45s var(--ease), border-color .45s, transform .6s var(--ease), scale .25s var(--ease)}
+  .barra .boton{min-height:44px; padding:0 22px}
+  .sitios-boton{min-height:44px; padding:0 18px}
+  .boton:active, .sitios-boton:active, .opcion:active, .puerta .ir:active{scale:.97}
+  .boton:focus-visible, .sitios-boton:focus-visible{outline-offset:3px; border-radius:999px}
+  .opcion:focus-visible, .puerta:focus-visible{outline-offset:5px; border-radius:30px}
+  /* Contacto: los títulos de las tarjetas arrancan a la misma altura */
+  .opcion{justify-content:flex-start}
+  .opcion strong{max-width:18ch}
+  .correo{max-width:68ch}
+  /* Formación: separación interna uniforme */
+  .credencial h3{margin-bottom:10px}
+  @media (max-width:860px){
+    .portada{align-items:flex-start; min-height:auto; padding-top:104px}
+    .pie-fila nav a, .pie-fila > span a{display:inline-flex; align-items:center; min-height:40px}
+    .pie-fila nav{gap:0 24px}
+    .panel a{min-height:44px}
+  }
 </style>
 </head>
 <body>
@@ -299,7 +326,7 @@
       </div>
       <div class="escena">
         <div class="trama" aria-hidden="true"></div>
-        <div class="foto" data-reveal="clip" style="--d:.2s"><img src="alejandra-radio.jpg" alt="Alejandra García Franco, psicóloga, durante una entrevista de radio" width="960" height="1200"></div>
+        <div class="foto" data-reveal="clip" style="--d:.2s"><picture><source srcset="alejandra-radio.webp" type="image/webp"><img src="alejandra-radio.jpg" alt="Alejandra García Franco, psicóloga, durante una entrevista de radio" width="960" height="1200" fetchpriority="high" decoding="async"></picture></div>
         <div class="registro" aria-hidden="true"></div>
         <svg class="flota capsula" viewBox="0 0 400 104" aria-hidden="true"><rect width="400" height="104" rx="52" fill="#D99A3A" filter="url(#tinta)"/></svg>
         <svg class="flota arco mezcla" viewBox="0 0 220 120" aria-hidden="true"><path d="M20 112 A90 90 0 0 1 200 112" fill="none" stroke="#EE8A73" stroke-width="40" filter="url(#gis)"/></svg>
@@ -349,7 +376,7 @@
           <span class="ir"><i><svg><use href="#flecha"/></svg></i>Ver servicios para empresas</span>
         </a>
         <a class="puerta psico" href="https://psicoeducale.alejandraconsultora.com">
-          <div class="decor" aria-hidden="true"><img src="psicoeducale-logo-cuadrado.png" alt="" width="900" height="908" loading="lazy"></div>
+          <div class="decor" aria-hidden="true"><picture><source srcset="psicoeducale-logo-cuadrado.webp" type="image/webp"><img src="psicoeducale-logo-cuadrado.png" alt="" width="900" height="908" loading="lazy" decoding="async"></picture></div>
           <span class="quien">Para familias y escuelas</span>
           <h3>PsicoEduc<b>Ale</b></h3>
           <p>Acompañamiento psicológico para niñas, niños y familias, y talleres de convivencia escolar.</p>
@@ -379,10 +406,10 @@
       <h2 data-split>Platiquemos</h2>
       <p class="texto revelar">Cuéntame qué necesitas: una capacitación para tu equipo, un taller para tu escuela o acompañamiento para tu familia.</p>
       <div class="opciones" data-escalonado>
-        <a class="opcion o1" href="https://wa.me/523310273102?text=Hola%20Alejandra%2C%20me%20gustar%C3%ADa%20platicar%20contigo"><span>WhatsApp</span><strong>Escríbeme al 33 1027 3102</strong></a>
+        <a class="opcion o1" href="https://wa.me/523310273102?text=Hola%20Alejandra%2C%20me%20gustar%C3%ADa%20platicar%20contigo"><span>WhatsApp</span><strong>Escríbeme al <span class="nw">33 1027 3102</span></strong></a>
         <a class="opcion o2" href="https://empresas.alejandraconsultora.com/#contacto"><span>Empresas</span><strong>Solicita una propuesta para tu equipo</strong></a>
       </div>
-      <p class="correo revelar">También por correo: <a href="mailto:alejandrafrancoconsultora@gmail.com">alejandrafrancoconsultora@gmail.com</a> · Ajijic, Jalisco · Presencial y en línea</p>
+      <p class="correo revelar">También por correo: <a class="nw" href="mailto:alejandrafrancoconsultora@gmail.com">alejandrafrancoconsultora@gmail.com</a> · Ajijic, Jalisco · Presencial y en línea</p>
     </div>
   </section>
 </main>

@@ -277,6 +277,32 @@
     .acciones .boton{flex:1 1 auto; justify-content:center}
   }
   @media (max-width:420px){ .logros{grid-template-columns:1fr} }
+
+  /* ===== Capa de pulido · nov 2026 (no cambia diseño: ritmo, tipografía, botones, celular) ===== */
+  picture{display:contents}
+  body{font-weight:400; font-size:1.1rem; line-height:1.75}
+  h1,h2,h3,.gigante{text-wrap:balance}
+  p,li,dd{text-wrap:pretty}
+  .nw{white-space:nowrap}
+  [data-count]{font-variant-numeric:tabular-nums}
+  .cabeza p{max-width:60ch}
+  .contacto p{max-width:60ch}
+  /* Botones: una altura para la barra (44) y otra para la página (52) */
+  .boton{min-height:52px; justify-content:center; transition:background .35s, color .35s, box-shadow .45s var(--ease), transform .6s var(--ease), scale .25s var(--ease)}
+  .barra .boton{min-height:44px; padding:0 22px}
+  .sitios-boton{min-height:44px; padding:0 18px}
+  .boton:active, .sitios-boton:active, .redes a:active{scale:.97}
+  .boton:focus-visible, .sitios-boton:focus-visible, .redes a:focus-visible{outline-offset:3px; border-radius:999px}
+  .redes a{min-height:44px}
+  /* Consulta: el círculo punteado ya no se corta en la orilla */
+  .consulta .deco{right:clamp(14px,3vw,40px); top:clamp(14px,3vw,40px); width:clamp(110px,14vw,170px)}
+  @media (max-width:860px){
+    .portada{align-items:flex-start; min-height:auto; padding-top:104px}
+    .pie-fila nav a, .pie-fila > span a{display:inline-flex; align-items:center; min-height:40px}
+    .pie-fila nav{gap:0 22px}
+    .panel a{min-height:44px}
+  }
+
 </style>
 </head>
 <body>
@@ -285,7 +311,7 @@
 <div id="intro" aria-hidden="true">
   <div class="intro-caja">
     <svg class="intro-arcos" viewBox="0 0 320 180"><path d="M30 165 A130 130 0 0 1 290 165" stroke="#EE8A73" pathLength="1"/><path d="M62 165 A98 98 0 0 1 258 165" stroke="#F6CF72" pathLength="1"/><path d="M94 165 A66 66 0 0 1 226 165" stroke="#86C9BF" pathLength="1"/></svg>
-    <img class="intro-logo" src="psicoeducale-logo-cuadrado.png" alt="" width="900" height="908">
+    <picture><source srcset="psicoeducale-logo-cuadrado.webp" type="image/webp"><img class="intro-logo" src="psicoeducale-logo-cuadrado.png" alt="" width="900" height="908"></picture>
   </div>
 </div>
 
@@ -304,7 +330,7 @@
 
 <header class="barra" id="barra">
   <div class="contenedor">
-    <a class="marca" href="#inicio" aria-label="PsicoEducAle, inicio"><img src="psicoeducale-logo-horizontal.png" alt="PsicoEducAle" width="1400" height="242"></a>
+    <a class="marca" href="#inicio" aria-label="PsicoEducAle, inicio"><picture><source srcset="psicoeducale-logo-horizontal.webp" type="image/webp"><img src="psicoeducale-logo-horizontal.png" alt="PsicoEducAle" width="1400" height="242" decoding="async"></picture></a>
     <nav aria-label="Secciones">
       <a href="#consulta">Consulta</a>
       <a href="#talleres">Talleres</a>
@@ -351,7 +377,7 @@
       </div>
       <div class="escena">
         <div class="blob-borde" aria-hidden="true"></div>
-        <div class="blob"><img src="psicoeducale-manual-coral.jpg" alt="Alejandra García Franco, psicóloga, sonriendo con su Manual de las emociones" width="720" height="904"></div>
+        <div class="blob"><picture><source srcset="psicoeducale-manual-coral.webp" type="image/webp"><img src="psicoeducale-manual-coral.jpg" alt="Alejandra García Franco, psicóloga, sonriendo con su Manual de las emociones" width="720" height="904" fetchpriority="high" decoding="async"></picture></div>
         <svg class="sticker s-sol" viewBox="0 0 100 100" aria-hidden="true"><g filter="url(#gis)"><g class="rayos" stroke="#F6CF72" stroke-width="7" stroke-linecap="round"><path d="M50 4v12M50 84v12M4 50h12M84 50h12M17 17l9 9M74 74l9 9M83 17l-9 9M26 74l-9 9"/></g><circle cx="50" cy="50" r="24" fill="#F6CF72"/></g></svg>
         <svg class="sticker s-arco" viewBox="0 0 160 90" aria-hidden="true"><g filter="url(#gis)" fill="none" stroke-width="18" stroke-linecap="round"><path d="M14 82 A66 66 0 0 1 146 82" stroke="#EE8A73"/><path d="M38 82 A42 42 0 0 1 122 82" stroke="#F6CF72" class="mezcla"/><path d="M62 82 A18 18 0 0 1 98 82" stroke="#86C9BF" class="mezcla"/></g></svg>
         <svg class="sticker s-estrella" viewBox="0 0 40 40" aria-hidden="true"><use href="#chispa" fill="#BFAEDD" filter="url(#gis)"/></svg>
@@ -371,7 +397,7 @@
 
   <section class="frase">
     <div class="contenedor frase-grid">
-      <div class="revelar"><div class="logo-tarjeta" data-tilt><img src="psicoeducale-logo-cuadrado.png" alt="Logotipo de PsicoEducAle: un niño lleno de ideas y una mujer que le ofrece un corazón" width="900" height="908" loading="lazy"></div></div>
+      <div class="revelar"><div class="logo-tarjeta" data-tilt><picture><source srcset="psicoeducale-logo-cuadrado.webp" type="image/webp"><img src="psicoeducale-logo-cuadrado.png" alt="Logotipo de PsicoEducAle: un niño lleno de ideas y una mujer que le ofrece un corazón" width="900" height="908" loading="lazy"></picture></div></div>
       <div>
         <p class="grande" data-ilumina>Todo lo que nos sucede tiene un porqué, <span class="acento">y un cómo puede mejorar.</span></p>
         <p class="pie-frase revelar">Te acompaño a criar y educar con límites y afecto.</p>
@@ -435,7 +461,7 @@
     <div class="contenedor sobre-grid">
       <div class="arco-marco">
         <div class="contorno" aria-hidden="true"></div>
-        <div class="foto" data-reveal="clip"><img src="alejandra-retrato-coral.jpg" alt="Alejandra García Franco, psicóloga, sonriendo" width="900" height="900" loading="lazy"></div>
+        <div class="foto" data-reveal="clip"><picture><source srcset="alejandra-retrato-coral.webp" type="image/webp"><img src="alejandra-retrato-coral.jpg" alt="Alejandra García Franco, psicóloga, sonriendo" width="900" height="900" loading="lazy" decoding="async"></picture></div>
         <div class="punto-sol" data-parallax=".08" aria-hidden="true"></div>
       </div>
       <div>
@@ -478,7 +504,7 @@
     <div class="sol-fondo" aria-hidden="true"><div class="puntos"></div><div class="nucleo"></div></div>
     <div class="contenedor">
       <h2 data-split>¿Platicamos?</h2>
-      <p class="revelar">Escríbeme con tus dudas o para agendar. Te respondo lo antes posible.<br>También por correo: <a href="mailto:alejandrafrancoconsultora@gmail.com">alejandrafrancoconsultora@gmail.com</a></p>
+      <p class="revelar">Escríbeme con tus dudas o para agendar. Te respondo lo antes posible.<br>También por correo: <a class="nw" href="mailto:alejandrafrancoconsultora@gmail.com">alejandrafrancoconsultora@gmail.com</a></p>
       <div class="acciones revelar">
         <a class="boton coral" href="https://wa.me/523310273102?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" data-magnetic>Escribir por WhatsApp</a>
       </div>

@@ -25,14 +25,14 @@
 .js [data-ilumina] .wl.on { opacity: 1; }
 
 /* Parallax */
-[data-parallax] { transform: translate3d(0, var(--py, 0px), 0); will-change: transform; }
+[data-parallax] { transform: translate3d(0, var(--py, 0px), 0); will-change: transform; backface-visibility: hidden; }
 
 /* Progreso de lectura */
 .progreso { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 120; transform-origin: 0 50%; transform: scaleX(var(--p, 0)); background: var(--progreso, currentColor); pointer-events: none; }
 
 /* Banda en movimiento */
 .marquesina { display: flex; overflow: hidden; user-select: none; }
-.marquesina .pista { display: flex; flex: none; align-items: center; animation: desliza var(--dur, 48s) linear infinite; }
+.marquesina .pista { display: flex; flex: none; align-items: center; animation: desliza var(--dur, 48s) linear infinite; will-change: transform; backface-visibility: hidden; }
 .marquesina:hover .pista { animation-play-state: paused; }
 @keyframes desliza { to { transform: translateX(-100%); } }
 
@@ -64,6 +64,7 @@
   .js [data-reveal="clip"] img { scale: 1 !important; }
   .js [data-ilumina] .wl { opacity: 1 !important; }
   .marquesina .pista, .tinta-cursor { animation: none !important; }
+  .boton:active, .sitios-boton:active { scale: none !important; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
 }
 

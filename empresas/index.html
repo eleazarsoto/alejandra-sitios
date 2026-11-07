@@ -295,6 +295,36 @@
     .incluye li{min-height:auto}
     .acciones .boton{width:100%; justify-content:center}
   }
+
+  /* ===== Capa de pulido · nov 2026 (no cambia diseño: ritmo, tipografía, botones, celular) ===== */
+  picture{display:contents}
+  h1,h2,h3,.gigante,.lista h3{text-wrap:balance}
+  p,li,dd,blockquote{text-wrap:pretty}
+  .nw{white-space:nowrap}
+  [data-count]{font-variant-numeric:tabular-nums}
+  .boton{min-height:52px; justify-content:center; transition:color .45s var(--ease), border-color .45s, transform .6s var(--ease), scale .25s var(--ease)}
+  .barra .boton{min-height:44px; padding:0 22px}
+  .sitios-boton{min-height:44px; padding:0 18px}
+  .boton:active, .sitios-boton:active, .canal:active{scale:.97}
+  .boton:focus-visible, .sitios-boton:focus-visible{outline-offset:3px; border-radius:999px}
+  /* Formulario: etiquetas legibles y campos con el mismo trato */
+  label{font-size:.8125rem}
+  input:focus-visible, select:focus-visible, textarea:focus-visible{outline:none}
+  /* Servicios: el número queda alineado con su título */
+  @media (min-width:861px){
+    .tarjeta{grid-template-columns:1fr .9fr; grid-template-rows:auto auto; align-content:center; row-gap:18px}
+    .tarjeta .t-num{grid-column:1; grid-row:1; align-self:end}
+    .tarjeta > div{grid-column:1; grid-row:2}
+    .tarjeta .t-icono{grid-column:2; grid-row:1 / span 2; align-self:center; justify-self:end; max-width:340px}
+  }
+  @media (max-width:860px){
+    .portada{justify-content:flex-start; min-height:auto; padding-top:104px}
+    .pie-fila nav a, .pie-fila > span a{display:inline-flex; align-items:center; min-height:40px}
+    .pie-fila nav{gap:0 24px}
+    .panel a{min-height:44px}
+    .canal{min-height:56px}
+  }
+
 </style>
 </head>
 <body>
@@ -500,7 +530,7 @@
     <div class="contenedor sobre-grid">
       <div class="foto-marco">
         <div class="trama" data-parallax=".06" aria-hidden="true"></div>
-        <div class="foto" data-reveal="clip"><img src="alejandra-conferencia.jpg" alt="Alejandra García Franco impartiendo una conferencia" width="960" height="1200" loading="lazy"></div>
+        <div class="foto" data-reveal="clip"><picture><source srcset="alejandra-conferencia.webp" type="image/webp"><img src="alejandra-conferencia.jpg" alt="Alejandra García Franco impartiendo una conferencia" width="960" height="1200" loading="lazy" decoding="async"></picture></div>
         <div class="registro" aria-hidden="true"></div>
         <svg class="sello" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="circulo-sello" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs><circle cx="60" cy="60" r="58" fill="#F8F5F0"/><text font-family="Source Sans 3, Arial, sans-serif" font-size="10" fill="#3F3935" font-weight="600"><textPath href="#circulo-sello" textLength="270" lengthAdjust="spacing">PSICÓLOGA · FACILITADORA · CONSULTORA ·</textPath></text><rect x="40" y="52" width="40" height="16" rx="8" fill="#D99A3A" filter="url(#tinta)"/></svg>
       </div>
